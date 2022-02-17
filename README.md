@@ -51,7 +51,7 @@ https://www.nexusmods.com/kingdomcomedeliverance/mods/591
 Remove Those Stupid Trails
 https://www.nexusmods.com/kingdomcomedeliverance/mods/7
 
-~
+~~~~~~
 
 config:
 
