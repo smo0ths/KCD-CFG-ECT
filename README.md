@@ -53,7 +53,7 @@ https://www.nexusmods.com/kingdomcomedeliverance/mods/7
 
 ~~~~~~
 
-config:
+Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
 
 ;Add launch commands: +exec user.cfg -devmode
 con_restricted=0;
