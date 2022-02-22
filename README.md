@@ -25,7 +25,7 @@ Create a mod folder in KingdomComeDeliverance/Mods
 
 [No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
 
-<details><summary>Quicksave (click for edits)</summary>
+<details><summary>Quicksave (click for edits and link)</summary>
 <p>
 
 [Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
