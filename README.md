@@ -47,7 +47,7 @@ the onRelease="1" part after those to fix getting off a horse...
 https://www.nexusmods.com/kingdomcomedeliverance/mods/1282
 
 
----
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
@@ -165,7 +165,7 @@ wh_horse_CameraCentering=0;------default 0.2 changed to 0*
 wh_pl_showfirecursor=1;------default 0 changed to 1*
 
 
----
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 <details>
@@ -255,7 +255,7 @@ Unlimited Weight:             https://www.nexusmods.com/kingdomcomedeliverance/m
 </details>
 
 
----
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 
