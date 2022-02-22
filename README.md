@@ -170,18 +170,20 @@ wh_pl_showfirecursor=1;------default 0 changed to 1*
 
 <details>
 <summary>
-
 Added all these in one rpg_param.xml
-
-NoFallDamage:                 https://www.nexusmods.com/kingdomcomedeliverance/mods/500
-More Faster XP:               https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
-Easy Sharpening:              https://www.nexusmods.com/kingdomcomedeliverance/mods/336
-Ultimate Repair Kit 2.0 Plus: https://www.nexusmods.com/kingdomcomedeliverance/mods/1292
-Unlimited Weight:             https://www.nexusmods.com/kingdomcomedeliverance/mods/12
-
+NoFallDamage            
+https://www.nexusmods.com/kingdomcomedeliverance/mods/500
+More Faster XP             
+https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
+Easy Sharpening           
+https://www.nexusmods.com/kingdomcomedeliverance/mods/336
+Ultimate Repair Kit 2.0 Plus: 
+https://www.nexusmods.com/kingdomcomedeliverance/mods/1292
+Unlimited Weight           
+https://www.nexusmods.com/kingdomcomedeliverance/mods/12
 </summary>
 <br>
-
+~~~~~~~~~~~~~~~~~~~~~~~~~
 <?xml version="1.0" encoding="us-ascii"?>
 <database name="hammerheart">
   <table name="rpg_param" version="1">
@@ -250,13 +252,8 @@ Unlimited Weight:             https://www.nexusmods.com/kingdomcomedeliverance/m
     </rows>
   </table>
 </database>
-
-
+~~~~~~~~~~~~~~~~~~~~~~~~~
 </details>
 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-
-
