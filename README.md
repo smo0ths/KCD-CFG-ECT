@@ -1,36 +1,36 @@
 
-## updated 2/22/2022 :ramen:
+#### updated 2/22/2022 :ramen:
 
-Create a mod folder in KingdomComeDeliverance/Mods
+#### Create a mod folder in KingdomComeDeliverance/Mods
 
 [Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
-
+<br>
 [Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
-
+<br>
 [Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
-
+<br>
 [Instant Herb Picking](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
-
+<br>
 [Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
-
+<br>
 [Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
-
+<br>
 [Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
-
+<br>
 [No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28)
-
+<br>
 [No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
-
+<br>
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
-
+<br>
 [No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
-
+<br>
 <details><summary>Quicksave (click for edits and link)</summary>
 <p>
 
 [Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
 
-### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
+#### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
 
 ```python
 updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
@@ -46,7 +46,7 @@ the onRelease="1" part after those to fix getting off a horse...
 </p>
 </details>
 
-## Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
+#### Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
 
 ```python
 ;Add launch commands: +exec user.cfg -devmode
@@ -162,16 +162,16 @@ wh_horse_CameraCentering=0;------default 0.2 changed to 0*
 wh_pl_showfirecursor=1;------default 0 changed to 1*
 ```
 
-## Added all these mods in one rpg_param.xml
+#### Added all these mods in one rpg_param.xml
 
 [NoFallDamage](https://www.nexusmods.com/kingdomcomedeliverance/mods/500)
-
+<br>
 [More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
-
+<br>
 [Easy Sharpening](https://www.nexusmods.com/kingdomcomedeliverance/mods/336)
-
+<br>
 [Ultimate Repair Kit 2.0 Plus](https://www.nexusmods.com/kingdomcomedeliverance/mods/1292)
-
+<br>
 [Unlimited Weight](https://www.nexusmods.com/kingdomcomedeliverance/mods/12)
 
 ```python
