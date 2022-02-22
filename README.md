@@ -9,7 +9,7 @@
 <br>
 [Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
 <br>
-[Instant Herb Picking](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
+[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
 <br>
 [Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
 <br>
