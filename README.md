@@ -1,41 +1,35 @@
+:ramen:
+
 *updated 2/22/2022
 
 Create a mod folder in KingdomComeDeliverance/Mods
 
-Cooking cauldron flickering smoke Fix
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1177
+Cooking cauldron flickering smoke Fix https://www.nexusmods.com/kingdomcomedeliverance/mods/1177
 
-Arrows go fast
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1240
+Arrows go fast https://www.nexusmods.com/kingdomcomedeliverance/mods/1240
 
-Remove Those Stupid Trails
-https://www.nexusmods.com/kingdomcomedeliverance/mods/7
+Remove Those Stupid Trails https://www.nexusmods.com/kingdomcomedeliverance/mods/7
 
-Instant Herb Picking
-https://www.nexusmods.com/kingdomcomedeliverance/mods/367
+Instant Herb Picking https://www.nexusmods.com/kingdomcomedeliverance/mods/367
 
-Alternate Food Spoil (Updated)
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1065
+Alternate Food Spoil (Updated) https://www.nexusmods.com/kingdomcomedeliverance/mods/1065
 
-Inventoried
-https://www.nexusmods.com/kingdomcomedeliverance/mods/797
+Inventoried https://www.nexusmods.com/kingdomcomedeliverance/mods/797
 
-Bushes- Collision Remover
-https://www.nexusmods.com/kingdomcomedeliverance/mods/591
+Bushes- Collision Remover https://www.nexusmods.com/kingdomcomedeliverance/mods/591
 
-No Helmet Vision
-https://www.nexusmods.com/kingdomcomedeliverance/mods/28
+No Helmet Vision https://www.nexusmods.com/kingdomcomedeliverance/mods/28
 
-No Blood On Screen (make Data folder then add the .pak)
-https://www.nexusmods.com/kingdomcomedeliverance/mods/58
+No Blood On Screen (make Data folder then add the .pak) https://www.nexusmods.com/kingdomcomedeliverance/mods/58
 
-No Drunk Sharpen Effects (make Data folder then add the .pak) 
-https://www.nexusmods.com/kingdomcomedeliverance/mods/105
+No Drunk Sharpen Effects (make Data folder then add the .pak) https://www.nexusmods.com/kingdomcomedeliverance/mods/105
 
-No Stamina Visual Effects (make Data folder then add the .pak)
-https://www.nexusmods.com/kingdomcomedeliverance/mods/10
+No Stamina Visual Effects (make Data folder then add the .pak) https://www.nexusmods.com/kingdomcomedeliverance/mods/10
+
+```
 
 Quicksave
+
 updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
 then added:
 <action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
@@ -44,13 +38,14 @@ also had to add:
 <action name="call_horse" onPress="1" onRelease="1"
 <action name="horse_dismount" onPress="1" onRelease="1"
 the onRelease="1" part after those to fix getting off a horse...
+
 https://www.nexusmods.com/kingdomcomedeliverance/mods/1282
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
+```
 
 Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
+
+```
 
 ;Add launch commands: +exec user.cfg -devmode
 con_restricted=0;
@@ -164,26 +159,22 @@ wh_cs_PlayerLockDisabled=0;------default 0
 wh_horse_CameraCentering=0;------default 0.2 changed to 0*
 wh_pl_showfirecursor=1;------default 0 changed to 1*
 
+```
 
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-<details>
-<summary>
 Added all these in one rpg_param.xml
-NoFallDamage            
-https://www.nexusmods.com/kingdomcomedeliverance/mods/500
-More Faster XP             
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
-Easy Sharpening           
-https://www.nexusmods.com/kingdomcomedeliverance/mods/336
-Ultimate Repair Kit 2.0 Plus: 
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1292
-Unlimited Weight           
-https://www.nexusmods.com/kingdomcomedeliverance/mods/12
-</summary>
-<br>
-~~~~~~~~~~~~~~~~~~~~~~~~~
+
+NoFallDamage https://www.nexusmods.com/kingdomcomedeliverance/mods/500
+
+More Faster XP https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
+
+Easy Sharpening https://www.nexusmods.com/kingdomcomedeliverance/mods/336
+
+Ultimate Repair Kit 2.0 Plus https://www.nexusmods.com/kingdomcomedeliverance/mods/1292
+
+Unlimited Weight https://www.nexusmods.com/kingdomcomedeliverance/mods/12
+
+```
+
 <?xml version="1.0" encoding="us-ascii"?>
 <database name="hammerheart">
   <table name="rpg_param" version="1">
@@ -252,8 +243,5 @@ https://www.nexusmods.com/kingdomcomedeliverance/mods/12
     </rows>
   </table>
 </database>
-~~~~~~~~~~~~~~~~~~~~~~~~~
-</details>
 
-
-~~~~~~~~~~~~~~~~~~~~~~~~~
+```
