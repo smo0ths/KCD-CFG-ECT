@@ -1,64 +1,54 @@
-Create a folder in KingdomComeDeliverance/Mods
+*updated 2/22/2022
 
-NoFallDamage
-these lines added to Unlimited Weights rpg_param.xml
-      <row rpg_param_key="HarmlessFallHeight" rpg_param_value="8000" />
-      <row rpg_param_key="InjuringFallHeight" rpg_param_value="8000" />
-      <row rpg_param_key="FatalFallHeight" rpg_param_value="10000" />
-      <row rpg_param_key="FallDamageMultiplierAtMaxiAgility" rpg_param_value="0.20" />
-
-Quicksave
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1282
-
-Definitive Repair Kit
-https://www.nexusmods.com/kingdomcomedeliverance/mods/938
+Create a mod folder in KingdomComeDeliverance/Mods
 
 Cooking cauldron flickering smoke Fix
 https://www.nexusmods.com/kingdomcomedeliverance/mods/1177
 
-Instant Herb Picking
-https://www.nexusmods.com/kingdomcomedeliverance/mods/367
-
 Arrows go fast
 https://www.nexusmods.com/kingdomcomedeliverance/mods/1240
-
-Alternate Food Spoil (Updated)
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1065
-
-Easy Sharpening
-https://www.nexusmods.com/kingdomcomedeliverance/mods/336
-
-More Faster XP
-https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
-
-Inventoried
-https://www.nexusmods.com/kingdomcomedeliverance/mods/797
-
-No Blood On Screen
-https://www.nexusmods.com/kingdomcomedeliverance/mods/58
-
-No Vignettes
-https://www.nexusmods.com/kingdomcomedeliverance/mods/78
-
-No Helmet Vision
-https://www.nexusmods.com/kingdomcomedeliverance/mods/28
-
-No Drunk Sharpen Effects
-https://www.nexusmods.com/kingdomcomedeliverance/mods/105
-
-No Stamina Visual Effects
-https://www.nexusmods.com/kingdomcomedeliverance/mods/10
-
-Unlimited Weight
-https://www.nexusmods.com/kingdomcomedeliverance/mods/12
-
-Bushes- Collision Remover
-https://www.nexusmods.com/kingdomcomedeliverance/mods/591
 
 Remove Those Stupid Trails
 https://www.nexusmods.com/kingdomcomedeliverance/mods/7
 
-~~~~~~
+Instant Herb Picking
+https://www.nexusmods.com/kingdomcomedeliverance/mods/367
+
+Alternate Food Spoil (Updated)
+https://www.nexusmods.com/kingdomcomedeliverance/mods/1065
+
+Inventoried
+https://www.nexusmods.com/kingdomcomedeliverance/mods/797
+
+Bushes- Collision Remover
+https://www.nexusmods.com/kingdomcomedeliverance/mods/591
+
+No Helmet Vision
+https://www.nexusmods.com/kingdomcomedeliverance/mods/28
+
+No Blood On Screen (make Data folder then add the .pak)
+https://www.nexusmods.com/kingdomcomedeliverance/mods/58
+
+No Drunk Sharpen Effects (make Data folder then add the .pak) 
+https://www.nexusmods.com/kingdomcomedeliverance/mods/105
+
+No Stamina Visual Effects (make Data folder then add the .pak)
+https://www.nexusmods.com/kingdomcomedeliverance/mods/10
+
+Quicksave
+updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
+then added:
+<action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+under <actionmap name="default" version="22">
+also had to add:
+<action name="call_horse" onPress="1" onRelease="1"
+<action name="horse_dismount" onPress="1" onRelease="1"
+the onRelease="1" part after those to fix getting off a horse...
+https://www.nexusmods.com/kingdomcomedeliverance/mods/1282
+
+
+---
+
 
 Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
 
@@ -133,7 +123,7 @@ es_DebrisLifetimeScale=0.6;------default 1 changed to 0.6*
 es_maxphysdistcloth=100;------default 300 changed to 100*
 g_breakage_particles_limit=80;------default 160 changed to 80*
 g_skipIntro=1;------default 0 changed to 1*
-gpu_Particle_Physics=1;------default 0 changed to 1*
+gpu_Particle_Physics=0;------default 0
 i_mouse_accel=0;
 i_mouse_smooth=0;
 p_max_MC_iters=4000;------default 6000 changed to 4000*
@@ -141,7 +131,9 @@ pl_movement.power_sprint_targetFOV=59;------default 55 changed to 59*
 r_AntialiasingMode=3;------default 1 changed to 3*
 r_AntialiasingTAAPattern=3;------default 1 changed to 3*
 r_AntialiasingTAASharpening=0;------default 0.2 changed to 0*
-r_DepthBits=32;------default 24 changed to 24
+r_BatchType=1;------default 1
+r_DeferredShadingAreaLights=1;------default 1
+r_DepthBits=32;------default 24 changed to 24*
 r_DrawNearFOV=59;------default 60 changed to 59*
 r_FogShadowsWater=1;------default 0 changed to 1*
 r_HDRBloom=0;------default 1 changed to 0*
@@ -173,7 +165,97 @@ wh_horse_CameraCentering=0;------default 0.2 changed to 0*
 wh_pl_showfirecursor=1;------default 0 changed to 1*
 
 
+---
 
+
+<details>
+<summary>
+
+Added all these in one rpg_param.xml
+
+NoFallDamage:                 https://www.nexusmods.com/kingdomcomedeliverance/mods/500
+More Faster XP:               https://www.nexusmods.com/kingdomcomedeliverance/mods/1129
+Easy Sharpening:              https://www.nexusmods.com/kingdomcomedeliverance/mods/336
+Ultimate Repair Kit 2.0 Plus: https://www.nexusmods.com/kingdomcomedeliverance/mods/1292
+Unlimited Weight:             https://www.nexusmods.com/kingdomcomedeliverance/mods/12
+
+</summary>
+<br>
+
+<?xml version="1.0" encoding="us-ascii"?>
+<database name="hammerheart">
+  <table name="rpg_param" version="1">
+    <header>
+      <column name="item_category" type="character varying" />
+      <column name="skill_id" type="integer" />
+      <column name="perk_id" type="uuid" />
+      <column name="rpg_param_key" type="character varying" />
+      <column name="rpg_param_value" type="real" />
+    </header>
+    <rows>
+      <row rpg_param_key="BaseInventoryCapacity" rpg_param_value="999999999" />
+      <row item_category="armor.horse_bridle.*" skill_id="8" />
+      <row item_category="armor.horse_saddle.*" skill_id="8" />
+      <row rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
+      <row rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
+      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
+      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
+      <row rpg_param_key="AlchemyXPPerSuccessfullBrewing" rpg_param_value="60" />
+      <row rpg_param_key="AlchemyXPPerAutocookBrewingRelative" rpg_param_value="0.2" />
+      <row rpg_param_key="FactionAngrinessDecayExp" rpg_param_value="3" />
+      <row rpg_param_key="HerbGatherXP" rpg_param_value="15" />
+      <row rpg_param_key="HorseRidingXPPerDistance" rpg_param_value="18.8" />
+      <row rpg_param_key="HoundmasterXPContextCommand" rpg_param_value="3" />
+      <row rpg_param_key="HoundmasterXPFeed" rpg_param_value="38" />
+      <row rpg_param_key="HoundmasterXPFetch" rpg_param_value="7.5" />
+      <row rpg_param_key="HoundmasterXPHit" rpg_param_value="3" />
+      <row rpg_param_key="HoundmasterXPKill" rpg_param_value="30" />
+      <row rpg_param_key="HoundmasterXPPlay" rpg_param_value="22.5" />
+      <row rpg_param_key="HoundmasterXPPOIDiscovery" rpg_param_value="30" />
+      <row rpg_param_key="HoundmasterXPPraise" rpg_param_value="22.5" />
+      <row rpg_param_key="HunterXPKill" rpg_param_value="22.5" />
+      <row rpg_param_key="LockPickingStealthXP" rpg_param_value="12" />
+      <row rpg_param_key="LockPickingSuccessXPMulCoef" rpg_param_value="27" />
+      <row rpg_param_key="NonSkillBookXP" rpg_param_value="45" />
+      <row rpg_param_key="PickpocketingFailXPMod" rpg_param_value="0.5" />
+      <row rpg_param_key="PickpocketingStealthXP" rpg_param_value="18" />
+      <row rpg_param_key="PickpocketingXP" rpg_param_value="22.5" />
+      <row rpg_param_key="ReadingXpPerHour" rpg_param_value="30" />
+      <row rpg_param_key="SecondaryStatXPRatio" rpg_param_value="0.8" />
+      <row rpg_param_key="SkillXPBlock" rpg_param_value="3" />
+      <row rpg_param_key="SkillXPComboHit" rpg_param_value="6" />
+      <row rpg_param_key="SkillXPHit" rpg_param_value="3" />
+      <row rpg_param_key="SkillXPKill" rpg_param_value="18" />
+      <row rpg_param_key="SkillXPPerfectBlock" rpg_param_value="12" />
+      <row rpg_param_key="SkillXPRiposte" rpg_param_value="12" />
+      <row rpg_param_key="SkillXPUseRepairKit" rpg_param_value="7.5" />
+      <row rpg_param_key="StatXPComboHit" rpg_param_value="6" />
+      <row rpg_param_key="StatXPHit" rpg_param_value="3" />
+      <row rpg_param_key="StatXPKill" rpg_param_value="12" />
+      <row rpg_param_key="StatXPSpeechPerSequence" rpg_param_value="2" />
+      <row rpg_param_key="StatXPVitalityPerDistance" rpg_param_value="12" />
+      <row rpg_param_key="StatXPVitalityPerJump" rpg_param_value="0.8" />
+      <row rpg_param_key="StatXPVitalityPerKill" rpg_param_value="22.5" />
+      <row rpg_param_key="StatXPVitalityPerVault" rpg_param_value="1.1" />
+      <row rpg_param_key="StealthAttackFailXp" rpg_param_value="15" />
+      <row rpg_param_key="StealthAttackMaxXp" rpg_param_value="75" />
+      <row rpg_param_key="StealthAttackMinXp" rpg_param_value="37.5" />
+      <row rpg_param_key="SharpeningMinIdealAngle" rpg_param_value="0" />
+      <row rpg_param_key="SharpeningMaxIdealAngle" rpg_param_value="0.98" />
+      <row rpg_param_key="SharpeningMinDestructionAngle" rpg_param_value="0.99" />
+      <row rpg_param_key="SharpeningMaxDestructionAngle" rpg_param_value="1" />
+      <row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
+    </rows>
+  </table>
+</database>
+
+
+</details>
+
+
+---
 
 
 
