@@ -5,6 +5,8 @@
 
 #### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
+---
+
 ```python
 ;Add launch commands: +exec user.cfg -devmode
 con_restricted=0;
@@ -122,6 +124,9 @@ r_WaterGodRays=0;------default 1 changed to 0
 r_WaterReflectionsQuality=3;------default 4 changed to 3*
 r_WaterTessellationHW=0;------default 1 changed to 0*
 ```
+
+---
+
 #### Create a mod folder in KingdomComeDeliverance/Mods
 
 [Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
@@ -157,6 +162,8 @@ UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.d
 <details><summary>Quicksave (click for edits and link)</summary>
 <p>
 
+---
+
 [Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
 
 #### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
@@ -175,7 +182,9 @@ the onRelease="1" part after those to fix getting off a horse...
 </p>
 </details>
 
-#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts)
+---
+
+#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
 
 No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
