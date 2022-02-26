@@ -184,15 +184,15 @@ the onRelease="1" part after those to fix getting off a horse...
 
 #### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
 
-No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
+InventoryCapacity set to 999999
+<br>
+HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
 [More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
 <br>
 [Easy Sharpening](https://www.nexusmods.com/kingdomcomedeliverance/mods/336)
 <br>
 [Ultimate Repair Kit 2.0 Plus](https://www.nexusmods.com/kingdomcomedeliverance/mods/1292)
-<br>
-[Unlimited Weight](https://www.nexusmods.com/kingdomcomedeliverance/mods/12)
 
 ```python
 <?xml version="1.0" encoding="us-ascii"?>
@@ -206,7 +206,7 @@ No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight s
       <column name="rpg_param_value" type="real" />
     </header>
     <rows>
-      <row rpg_param_key="BaseInventoryCapacity" rpg_param_value="999999999" />
+      <row rpg_param_key="BaseInventoryCapacity" rpg_param_value="999999" />
       <row item_category="armor.horse_bridle.*" skill_id="8" />
       <row item_category="armor.horse_saddle.*" skill_id="8" />
       <row rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
