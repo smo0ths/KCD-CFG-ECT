@@ -130,39 +130,37 @@ r_WaterTessellationHW=0;------default 1 changed to 0*
 #### Create a mod folder in KingdomComeDeliverance/Mods
 
 [Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
-<br>
+
 [Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
-<br>
+
 [Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
-<br>
+
 [Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
-<br>
+
 [Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
-<br>
+
 [Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
-<br>
+
 [Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
-<br>
+
 [NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
-<br>
+
 [MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
-<br>
+
 [HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
-<br>
+
 [No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
-<br>
+
 [No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
-<br>
+
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
-<br>
+
 [No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
-<br>
-UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds
-<br>
+
+UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder)
+
 <details><summary>Quicksave (click for edits and link)</summary>
 <p>
-
----
 
 [Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
 
