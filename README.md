@@ -184,7 +184,7 @@ the onRelease="1" part after those to fix getting off a horse...
 
 #### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
 
-InventoryCapacity set to 999999
+BaseInventoryCapacity set to 999999
 <br>
 HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
