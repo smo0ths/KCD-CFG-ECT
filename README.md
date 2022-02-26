@@ -1,9 +1,9 @@
 
 #### updated 2/26/2022 :ramen:
 
-#### my config and stuff for kcd hf
+###### my config and stuff for kcd hf
 
-#### Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
+#### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
 ```python
 ;Add launch commands: +exec user.cfg -devmode
