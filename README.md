@@ -176,10 +176,7 @@ r_WaterTessellationHW=0;------default 1 changed to 0*
 
 #### Added all these mods in one rpg_param.xml
 
-No fall damage with      
-<row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
-<row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
-<row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
+No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
 [More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
 <br>
