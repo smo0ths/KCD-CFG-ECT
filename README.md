@@ -1,5 +1,5 @@
 
-#### updated 2/23/2022 :ramen:
+#### updated 2/26/2022 :ramen:
 
 #### Create a mod folder in KingdomComeDeliverance/Mods
 
@@ -114,8 +114,8 @@ e_DecalsRange=10;------default 20 changed to 10*
 e_GsmRangeStep=2.5;------default 3 changed to 2.5*
 e_LodFaceAreaTargetSize=0.0006;------default 0.001 changed to 0.0006*
 e_LodRatio=25;------default 25
-e_MergedMeshesInstanceDist=4;------default 8 changed to 4*
-e_MergedMeshesLodRatio=5;------default 5 changed to 4*
+e_MergedMeshesInstanceDist=5;------default 8 changed to 5*
+e_MergedMeshesLodRatio=1;------default 5 changed to 1*
 e_MergedMeshesPool=16384;------default 8192 change to 16384
 e_MergedMeshesViewDistRatio=85;------default 70 changed to 85*
 e_ObjShadowCastSpec=2;------default 3 changed to 2*
