@@ -17,13 +17,21 @@
 <br>
 [Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
 <br>
-[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28)
+[NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
+<br>
+[MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
+<br>
+[HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
+<br>
+[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
 <br>
 [No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
 <br>
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
 <br>
 [No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
+<br>
+UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds
 <br>
 <details><summary>Quicksave (click for edits and link)</summary>
 <p>
@@ -168,7 +176,10 @@ r_WaterTessellationHW=0;------default 1 changed to 0*
 
 #### Added all these mods in one rpg_param.xml
 
-[NoFallDamage](https://www.nexusmods.com/kingdomcomedeliverance/mods/500)
+No fall damage with      
+<row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
+<row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
+<row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
 <br>
 [More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
 <br>
@@ -244,6 +255,7 @@ r_WaterTessellationHW=0;------default 1 changed to 0*
       <row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
       <row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
       <row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
+      <row rpg_param_key="FullClothDirtyingOnFullSpeed" rpg_param_value="5000" />
     </rows>
   </table>
 </database>
