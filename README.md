@@ -1,58 +1,7 @@
 
 #### updated 2/26/2022 :ramen:
 
-#### Create a mod folder in KingdomComeDeliverance/Mods
-
-[Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
-<br>
-[Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
-<br>
-[Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
-<br>
-[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
-<br>
-[Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
-<br>
-[Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
-<br>
-[Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
-<br>
-[NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
-<br>
-[MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
-<br>
-[HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
-<br>
-[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
-<br>
-[No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
-<br>
-[No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
-<br>
-[No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
-<br>
-UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds
-<br>
-<details><summary>Quicksave (click for edits and link)</summary>
-<p>
-
-[Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
-
-#### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
-
-```python
-updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
-then added:
-<action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
-under <actionmap name="default" version="22">
-
-also had to add:
-<action name="call_horse" onPress="1" onRelease="1"
-<action name="horse_dismount" onPress="1" onRelease="1"
-the onRelease="1" part after those to fix getting off a horse...
-```
-</p>
-</details>
+#### my config and stuff for kcd hf
 
 #### Create a file in KingdomComeDeliverance/user.cfg and copy/paste this:
 
@@ -173,8 +122,60 @@ r_WaterGodRays=0;------default 1 changed to 0
 r_WaterReflectionsQuality=3;------default 4 changed to 3*
 r_WaterTessellationHW=0;------default 1 changed to 0*
 ```
+#### Create a mod folder in KingdomComeDeliverance/Mods
 
-#### Added all these mods in one rpg_param.xml
+[Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
+<br>
+[Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
+<br>
+[Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
+<br>
+[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
+<br>
+[Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
+<br>
+[Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
+<br>
+[Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
+<br>
+[NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
+<br>
+[MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
+<br>
+[HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
+<br>
+[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
+<br>
+[No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
+<br>
+[No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
+<br>
+[No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
+<br>
+UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds
+<br>
+<details><summary>Quicksave (click for edits and link)</summary>
+<p>
+
+[Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
+
+#### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
+
+```python
+updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
+then added:
+<action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
+under <actionmap name="default" version="22">
+
+also had to add:
+<action name="call_horse" onPress="1" onRelease="1"
+<action name="horse_dismount" onPress="1" onRelease="1"
+the onRelease="1" part after those to fix getting off a horse...
+```
+</p>
+</details>
+
+#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts)
 
 No fall damage with HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
 <br>
