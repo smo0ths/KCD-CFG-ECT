@@ -1,5 +1,5 @@
 
-#### updated 2/26/2022 :ramen:
+#### updated 5/11/2022 :ramen:
 
 ###### my config and stuff for kcd hf
 
@@ -85,7 +85,7 @@ e_TerrainLodRatio=0.5;------def 0.3------changed to 0.5*
 e_TerrainOcclusionCullingMaxDist=150;------def 200------changed to 150*
 e_UberlodDistanceRatio=1.9;------def 1.8------changed to 1.9*
 e_ViewDistRatioVegetation=65;------def 55------changed to 65*
-e_VolumetricFog=1;------def 0------changed to 1*
+e_VolumetricFog=0;------def 0
 es_DebrisLifetimeScale=0.6;------def 1------changed to 0.6*
 es_maxphysdistcloth=100;------def 300------changed to 100*
 g_breakage_particles_limit=80;------def 160------changed to 80*
@@ -176,6 +176,22 @@ also had to add:
 <action name="call_horse" onPress="1" onRelease="1"
 <action name="horse_dismount" onPress="1" onRelease="1"
 the onRelease="1" part after those to fix getting off a horse...
+```
+</p>
+</details>
+
+<details><summary>Ride horse threw rivers (make mod folder)</summary>
+<p>
+
+#### zzzz_horse_ignore_water_barrier\Data\zzzz_horse_ignore_water_barrier.pak\Libs\MaterialEffects\SurfaceTypes.xml
+
+```python
+add  horse_ignore="1" in here
+
+  <SurfaceType name="mat_deep_water_barrier">
+    <Physics friction="0.5" elasticity="0.050000001"  pierceability="11"  dbg_color="123,103,65" horse_ignore="1" />
+    <Barrier distance="3" slowdown="1" monologMetaroleId="335"/>
+  </SurfaceType>
 ```
 </p>
 </details>
