@@ -1,16 +1,17 @@
 
-#### updated 5/11/2022 :ramen:
+#### updated 12/4/2022 :ramen:
 
 ###### my config and stuff for kcd hf
+
+###### Use Nvidia Image Scaling and turn down in game res for more fps
 
 #### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
 ---
 
 ```python
-;Add launch commands: +exec user.cfg -devmode
 con_restricted=0;
-sys_MaxFPS=90;------def 0------changed to 90*
+sys_MaxFPS=162;------def 0------changed to 162*
 sys_spec=0;------sets custom spec
 sys_spec_GameEffects=3;
 sys_spec_Light=3;
@@ -42,13 +43,13 @@ q_ShaderWater=3;
 Bind 0 "exec user.cfg";
 Bind 8 "g_showHUD 0";
 Bind 9 "g_showHUD 1";
-Bind f1 "sys_MaxFPS 90";
-Bind f2 "sys_MaxFPS 163";
+Bind f1 "sys_MaxFPS 111";
+Bind f2 "sys_MaxFPS 162";
 Bind f3 "exec TEST1.cfg";
 Bind f4 "exec TEST2.cfg";
-cl_fov=59;------def 60------changed to 59*
-pl_movement.power_sprint_targetFOV=59;------def 55------changed to 59*
-r_DrawNearFOV=59;------def 60------changed to 59*
+cl_fov=73;------def 60------changed to 73*
+pl_movement.power_sprint_targetFOV=73;------def 55------changed to 73*
+r_DrawNearFOV=73;------def 60------changed to 73*
 cl_sensitivity=10;
 i_mouse_accel=0;
 i_mouse_smooth=0;
@@ -77,7 +78,7 @@ e_ShadowsCastViewDistRatio=0.8;------def 1------changed to 0.8*
 e_ShadowsCastViewDistRatioMulInvis=0.1;------def 0.4------changed to 0.1*
 e_ShadowsMaxTexRes=1024;------def 1024
 e_ShadowsUpdateViewDistRatio=80;------def 100------changed to 80*
-e_SkyQuality=1;------def 2------changed to 1*
+e_SkyQuality=2;------def 2------1 for PERFORMANCE
 e_StreamCgfPoolSize=1024;------def 512------changed to 1024*
 e_svoTI_SSAOAmount=1.5;------def 1------changed to 1.5*
 e_TerrainDetailMaterialsViewDistZ=100;------def 80------changed to 100*
@@ -104,7 +105,7 @@ r_MotionBlur=0;
 r_RainMaxViewDist_Deferred=170;------def 150------changed to 170*
 r_ShadowCastingLightsMaxCount=12;------def 16------changed to 12*
 r_ShadowsBias=0.00001;------def 0.00008------changed to 0.00001*
-r_ShadowsCacheResolutions=4214;------def 6324,4214,2810,1872,624------changed to 4214*
+r_ShadowsCacheResolutions=6324,4214,2810,1872,624;------def 6324,4214,2810,1872,624
 r_ShadowsScreenSpace=1;------def 2------changed to 1*
 r_ssdoAmountAmbient=2;------def 1------changed to 2*
 r_ssdoAmountDirect=4;------def 1.5------changed to 4*
@@ -115,7 +116,7 @@ r_SSReflections=0;------def 1------changed to 0*
 r_SuperSampling=1;------def 1
 r_TexMaxAnisotropy=8;------def 4------changed to 8*
 r_TexMinAnisotropy=8;------def 4------changed to 8*
-r_TexNoAnisoAlphaTest=1;------def 0------changed to 1*
+r_TexNoAnisoAlphaTest=0;------def 0------1 for PERFORMANCE
 r_VolumetricFogSunLightCorrection=0;------def 1------changed to 0*
 r_VolumetricFogTexDepth=8;------def 32------changed to 8*
 r_VolumetricFogTexScale=25;------def 10------changed to 25*
