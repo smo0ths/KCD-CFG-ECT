@@ -1,284 +1,383 @@
 
-#### updated 12/4/2022 :ramen:
+#### updated 5/2/2023 :ramen:
 
-###### my config and stuff for kcd hf
+###### for UE4 games for reference/customization/optimization/learning
 
-###### Use Nvidia Image Scaling and turn down in game res for more fps
+###### always testing stuff contact me [smoothschannel](https://twitch.tv/smoothschannel) or [discord](https://discord.gg/tDZT7QSx8m)
 
-#### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
+###### my config is trying to be quality and perform well for any UE4 game, it might not be perfectly optimal for a specific game
 
----
+###### def is pretty much reference to high scalablity group
 
-```python
-con_restricted=0;
-sys_MaxFPS=162;------def 0------changed to 162*
-sys_spec=0;------sets custom spec
-sys_spec_GameEffects=3;
-sys_spec_Light=3;
-sys_spec_ObjectDetail=3;
-sys_spec_Particles=3;
-sys_spec_Physics=3;
-sys_spec_PostProcessing=3;
-sys_spec_Shading=3;
-sys_spec_Shadows=3;
-sys_spec_Sound=3;
-sys_spec_Texture=3;
-sys_spec_TextureResolution=7;------HD textures on
-sys_spec_Vegetation=3;
-sys_spec_VolumetricEffects=3;
-sys_spec_Water=3;
-q_Renderer=3;
-q_ShaderFX=3;
-q_ShaderGeneral=3;
-q_ShaderGlass=3;
-q_ShaderHDR=3;
-q_ShaderIce=3;
-q_ShaderMetal=3;
-q_ShaderPostProcess=3;
-q_ShaderShadow=3;
-q_ShaderSky=3;
-q_ShaderTerrain=3;
-q_ShaderVegetation=3;
-q_ShaderWater=3;
-Bind 0 "exec user.cfg";
-Bind 8 "g_showHUD 0";
-Bind 9 "g_showHUD 1";
-Bind f1 "sys_MaxFPS 111";
-Bind f2 "sys_MaxFPS 162";
-Bind f3 "exec TEST1.cfg";
-Bind f4 "exec TEST2.cfg";
-cl_fov=73;------def 60------changed to 73*
-pl_movement.power_sprint_targetFOV=73;------def 55------changed to 73*
-r_DrawNearFOV=73;------def 60------changed to 73*
-cl_sensitivity=10;
-i_mouse_accel=0;
-i_mouse_smooth=0;
-g_skipIntro=1;------def 0------changed to 1*
-r_Vsync=0;
-wh_cs_PlayerLockDisabled=0;------def 0
-wh_horse_CameraCentering=0;------def 0.2------changed to 0*
-wh_pl_showfirecursor=1;------def 0------changed to 1*
-ca_AttachmentCullingRation=300;------def 360------changed to 300*
-e_CoverageBufferTerrainLodShift=0;------def 2------changed to 0*
-e_CullVegActivation=30;------def 50------changed to 30*
-e_DecalsLifeTimeScale=1;------def 2------changed to 1*
-e_DecalsRange=10;------def 20------changed to 10*
-e_GsmRangeStep=2.5;------def 3------changed to 2.5*
-e_LodFaceAreaTargetSize=0.0006;------def 0.001------changed to 0.0006*
-e_LodRatio=25;------def 25
-e_MergedMeshesInstanceDist=5;------def 8------changed to 5*
-e_MergedMeshesLodRatio=1;------def 5------changed to 1*
-e_MergedMeshesPool=16384;------def 8192 change to 16384
-e_MergedMeshesViewDistRatio=85;------def 70------changed to 85*
-e_ObjShadowCastSpec=2;------def 3------changed to 2*
-e_PhysProxyTriLimit=5000;------def 10000------changed to 5000*
-e_ShadowsBlendCascades=0;------def 2------changed to 0*
-e_ShadowsCacheUpdate=1;------def 2------changed to 1*
-e_ShadowsCastViewDistRatio=0.8;------def 1------changed to 0.8*
-e_ShadowsCastViewDistRatioMulInvis=0.1;------def 0.4------changed to 0.1*
-e_ShadowsMaxTexRes=1024;------def 1024
-e_ShadowsUpdateViewDistRatio=80;------def 100------changed to 80*
-e_SkyQuality=2;------def 2------1 for PERFORMANCE
-e_StreamCgfPoolSize=1024;------def 512------changed to 1024*
-e_svoTI_SSAOAmount=1.5;------def 1------changed to 1.5*
-e_TerrainDetailMaterialsViewDistZ=100;------def 80------changed to 100*
-e_TerrainLodRatio=0.5;------def 0.3------changed to 0.5*
-e_TerrainOcclusionCullingMaxDist=150;------def 200------changed to 150*
-e_UberlodDistanceRatio=1.9;------def 1.8------changed to 1.9*
-e_ViewDistRatioVegetation=65;------def 55------changed to 65*
-e_VolumetricFog=0;------def 0
-es_DebrisLifetimeScale=0.6;------def 1------changed to 0.6*
-es_maxphysdistcloth=100;------def 300------changed to 100*
-g_breakage_particles_limit=80;------def 160------changed to 80*
-gpu_Particle_Physics=0;------def 0
-p_max_MC_iters=4000;------def 6000------changed to 4000*
-r_AntialiasingMode=3;------def 1------changed to 3*
-r_AntialiasingTAAPattern=3;------def 1------changed to 3*
-r_AntialiasingTAASharpening=0;------def 0.2------changed to 0*
-r_BatchType=1;------def 1
-r_DeferredShadingAreaLights=1;------def 1
-r_DepthBits=32;------def 24------changed to 32*
-r_FogShadowsWater=1;------def 0------changed to 1*
-r_HDRBloom=0;------def 1------changed to 0*
-r_HDRVignetting=0;------def 1------changed to 0*
-r_MotionBlur=0;
-r_RainMaxViewDist_Deferred=170;------def 150------changed to 170*
-r_ShadowCastingLightsMaxCount=12;------def 16------changed to 12*
-r_ShadowsBias=0.00001;------def 0.00008------changed to 0.00001*
-r_ShadowsCacheResolutions=6324,4214,2810,1872,624;------def 6324,4214,2810,1872,624
-r_ShadowsScreenSpace=1;------def 2------changed to 1*
-r_ssdoAmountAmbient=2;------def 1------changed to 2*
-r_ssdoAmountDirect=4;------def 1.5------changed to 4*
-r_ssdoAmountReflection=5;------def 4------changed to 5*
-r_ssdoRadius=1;------def 0.3------changed to 1*
-r_ssdoRadiusMin=0.02;------def 0.1------changed to 0.02*
-r_SSReflections=0;------def 1------changed to 0*
-r_SuperSampling=1;------def 1
-r_TexMaxAnisotropy=8;------def 4------changed to 8*
-r_TexMinAnisotropy=8;------def 4------changed to 8*
-r_TexNoAnisoAlphaTest=0;------def 0------1 for PERFORMANCE
-r_VolumetricFogSunLightCorrection=0;------def 1------changed to 0*
-r_VolumetricFogTexDepth=8;------def 32------changed to 8*
-r_VolumetricFogTexScale=25;------def 10------changed to 25*
-r_WaterCaustics=0;------def 1------changed to 0
-r_WaterGodRays=0;------def 1------changed to 0
-r_WaterReflectionsQuality=3;------def 4------changed to 3*
-r_WaterTessellationHW=0;------def 1------changed to 0*
-```
+###### Use Nvidia Image Scaling and turn down in game res for more fps (Enabled dlss quality with this for even more fps)
 
 ---
 
-#### Create a mod folder in KingdomComeDeliverance/Mods
-
-[Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
-
-[Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
-
-[Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
-
-[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
-
-[Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
-
-[Inventoried](https://www.nexusmods.com/kingdomcomedeliverance/mods/797)
-
-[Bushes- Collision Remover](https://www.nexusmods.com/kingdomcomedeliverance/mods/591)
-
-[NoTimedDecisions](https://www.nexusmods.com/kingdomcomedeliverance/mods/1343)
-
-[MuttBeQuiet](https://www.nexusmods.com/kingdomcomedeliverance/mods/1322)
-
-[HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
-
-[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
-
-[No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
-
-[No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
-
-[No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
-
-UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder)
-
-<details><summary>Quicksave (click for edits and link)</summary>
+<details><summary>Open Engine.ini and copy paste under lines in the file</summary>
 <p>
-
-[Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
-
-#### replace defaultprofile.xml and edit lines in Quicksave\Data\Data.pak\Libs\Config\defaultprofile.xml
-
-```python
-updated to latest KingdomComeDeliverance\Data\patch\ipl_patch_010800.pak\libs\config\defaultprofile.xml
-then added:
-<action consoleCmd="1" keyboard="f5" name="quicksave" onPress="1" />
-under <actionmap name="default" version="22">
-
-also had to add:
-<action name="call_horse" onPress="1" onRelease="1"
-<action name="horse_dismount" onPress="1" onRelease="1"
-the onRelease="1" part after those to fix getting off a horse...
-```
+press <kbd>⊞ Win+R</kbd> then copy paste
+<br>
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Engine.ini
+<br>
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Engine.ini
 </p>
 </details>
 
-<details><summary>Ride horse threw rivers (make mod folder)</summary>
-<p>
-
-#### zzzz_horse_ignore_water_barrier\Data\zzzz_horse_ignore_water_barrier.pak\Libs\MaterialEffects\SurfaceTypes.xml
-
 ```python
-add  horse_ignore="1" in here
+[Core.Log]
+Global=off;
 
-  <SurfaceType name="mat_deep_water_barrier">
-    <Physics friction="0.5" elasticity="0.050000001"  pierceability="11"  dbg_color="123,103,65" horse_ignore="1" />
-    <Barrier distance="3" slowdown="1" monologMetaroleId="335"/>
-  </SurfaceType>
+[Audio]
+MaxChannels=96; ⚫️DEF 0 🟢64 for PERFORMANCE ⚪️EDITED
+CommonAudioPoolSize=0; ⚫️DEF 0
+UnfocusedVolumeMultiplier=1;
+
+[/Script/Engine.Engine]
+bSmoothFrameRate=0;
+bPauseOnLossOfFocus=0;
+bUseFixedFrameRate=0;
+DisplayGamma=2.2;
+
+[TextureStreaming]
+PoolSizeVRAMPercentage=64; ⚫️DEF 70 🟢texturepool cache 🟣TEST ⚪️EDITED
+
+[ConsoleVariables]
+D3D12.AdjustTexturePoolSizeBasedOnBudget=1; ⚫️DEF 0 🟣TEST ⚪️EDITED
+foliage.DensityScale=0.6; ⚫️DEF 0.8 🟢0.6 for PERFORMANCE ⚪️EDITED
+foliage.MinLOD=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+grass.DensityScale=0.6; ⚫️DEF 1 🟢0.6 for PERFORMANCE ⚪️EDITED
+grass.DisableDynamicShadows=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+grass.TickInterval=10; ⚫️DEF 1 🟢10 for PERFORMANCE ⚪️EDITED
+p.AnimDynamics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+p.ClothPhysics=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+p.RigidBodyNode=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED 🟣TEST
+r.AllowDownsampledStandardTranslucency=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.AllowLandscapeShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.AllowPointLightCubemapShadows=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.AllowSimpleLights=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.AlsoUseSphereForFrustumCull=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusion.Compute=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.AmbientOcclusionLevels=2; ⚫️DEF 3 🟢0 for PERFORMANCE ⚪️EDITED
+r.AmbientOcclusionMipLevelFactor=1; ⚫️DEF 0.6 ⚪️EDITED
+r.AmbientOcclusionRadiusScale=0.1; ⚫️DEF 1 ⚪️EDITED
+r.AnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Bloom.Cross=0; ⚫️DEF 0 🟢0.7777 for anamorphic
+r.Bloom.HalfResolutionFFT=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.CapsuleShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.CompileShadersForDevelopment=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.ContactShadows=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.CookOutUnusedDetailModeComponents=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TEST
+r.D3D11.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.D3D12.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.DBuffer=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DefaultBackBufferPixelFormat=4; ⚫️DEF 4 ⚪️EDITED 🟣TEST
+r.DefaultFeature.AmbientOcclusion=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DefaultFeature.AmbientOcclusionStaticFraction=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DefaultFeature.AntiAliasing=2; 🟢1 FXAA 2 TAA 3 MSAA 0 OFF ⚪️EDITED
+r.DeferSkeletalDynamicDataUpdateUntilGDME=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.DepthOfFieldQuality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.DetailMode=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.DFShadowQuality=2; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE ⚪️EDITED
+r.DFShadowScatterTileCulling=1; ⚫️DEF 1
+r.DFTwoSidedMeshDistanceBias=5; ⚫️DEF 4 ⚪️EDITED
+r.DiscardUnusedQuality=0; ⚫️DEF 0 🟣TEST
+r.DistanceFieldAO=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.DistanceFieldShadowing=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.DoInitViewsLightingAfterPrepass=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.DoLazyStaticMeshUpdate=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.DoTiledReflections=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.EmitterSpawnRateScale=0.5; ⚫️DEF 1 🟢0.125 for PERFORMANCE ⚪️EDITED
+r.EnableAsyncComputeVolumetricFog=1; ⚫️DEF ❓ 🟣TEST
+r.FreeSkeletalMeshBuffers=1; ⚫️DEF 0 🟢1 for PERFORMANCE 🟣TEST
+r.FullScreenMode=0; ⚫️DEF 0 🟢0 for PERFORMANCE
+r.GBufferFormat=1; ⚫️DEF 1 🟢0 for PERFORMANCE 🟣TEST
+r.GenerateLandscapeGIData=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟣TEST
+r.GenerateMeshDistanceFields=0; ⚫️DEF ❓ 🟢0 for PERFORMANCE 🟢1 for DFSHADOWS DFAO 🟣TEST
+r.GPUCrash.CollectionEnable=0; ⚫️DEF 1 ⚪️EDITED
+r.HZBOcclusion=1; ⚫️DEF ❓ 🟣TEST
+r.LandscapeLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.LandscapeLODDistributionScale=1; ⚫️DEF 1
+r.LensFlareQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE
+r.LightMaxDrawDistanceScale=1; ⚫️DEF 1 🟢0.6 for PERFORMANCE
+r.LightShaftAllowTAA=0; ⚫️DEF 1 ⚪️EDITED
+r.LightShaftDownSampleFactor=1; ⚫️DEF 2 🟢2 for PERFORMANCE ⚪️EDITED
+r.LightShaftQuality=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.LightShaftRenderToSeparateTranslucency=0; ⚫️DEF 0
+r.MaterialQualityLevel=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.MaxAnisotropy=8; ⚫️DEF 4 ⚪️EDITED
+r.MinScreenRadiusForLights=0.03; ⚫️DEF 0.03 🟢0.06 for PERFORMANCE
+r.MinTimeBetweenTicks=12; ⚫️DEF 8 or 16 ⚪️EDITED
+r.MipMapLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.MotionBlurQuality=0; ⚫️DEF 3 ⚪️EDITED
+r.MSAACount=0; ⚫️DEF 4 ⚪️EDITED
+r.NormalMapsForStaticLighting=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.ParticleLightQuality=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.ParticleLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.PostProcessAAQuality=5; 🟢1 or 2 FXAA 3 or 4 5 6 TAA 0 OFF ⚪️EDITED
+r.ReflectionEnvironment=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.ReflectionEnvironmentLightmapMixLargestWeight=10000; ⚫️DEF 10000
+r.RefractionQuality=2; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.RHICmdAsyncRHIThreadDispatch=1; ⚫️DEF 1 🟣TEST 🔴experimental
+r.SceneColorFringeQuality=0; ⚫️DEF 1 ⚪️EDITED
+r.ScreenPercentage=100; ⚫️DEF 100 🟢70 for PERFORMANCE 🟣TEST
+r.SecondaryScreenPercentage.GameViewport=0; ⚫️DEF 0 🟢83.33 for PERFORMANCE 🟣TEST
+r.SeparateTranslucency=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Shadow.CachedShadowsCastFromMovablePrimitives=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Shadow.CSM.MaxCascades=3; ⚫️DEF 3 🟢1 or 2 for PERFORMANCE
+r.Shadow.CSM.TransitionScale=1; ⚫️DEF 0.8 ⚪️EDITED
+r.Shadow.DistanceScale=1; ⚫️DEF 0.85 ⚪️EDITED
+r.Shadow.MaxCSMResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
+r.Shadow.MaxResolution=2048; ⚫️DEF 2048 🟢1024 for PERFORMANCE
+r.ShadowQuality=3; ⚫️DEF 4 🟢3 for PERFORMANCE ⚪️EDITED
+r.SkeletalMeshLODBias=0; ⚫️DEF 0 🟢1 for PERFORMANCE
+r.SSGI.Quality=0; ⚫️DEF 2 🟢0 for PERFORMANCE ⚪️EDITED
+r.SSS.Checkerboard=1; ⚫️DEF 2 🟢1 for PERFORMANCE ⚪️EDITED
+r.SSS.Quality=0; ⚫️DEF -1 🟢0 for PERFORMANCE ⚪️EDITED
+r.SSS.SampleSet=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Streaming.AmortizeCPUToGPUCopy=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.Streaming.MaxNumTexturesToStreamPerFrame=5; ⚫️DEF 0 🟢5 for PERFORMANCE ⚪️EDITED
+r.SubsurfaceScattering=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.SupportAnisotropicMaterials=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.SupportMaterialLayers=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.TemporalAA.Algorithm=1; ⚫️DEF 0 🟢0 for PERFORMANCE ⚪️EDITED
+r.TemporalAA.R11G11B10History=0; ⚫️DEF 0 🟣TEST 🔴experimental
+r.TemporalAAFilterSize=0.1; ⚫️DEF 1 ⚪️EDITED
+r.TemporalAASamples=4; ⚫️DEF 8 ⚪️EDITED
+r.TessellationAdaptivePixelsPerTriangle=9999999; ⚫️DEF 48 🟢9999999 for PERFORMANCE ⚪️EDITED
+r.TiledDeferredShading=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Tonemapper.GrainQuantization=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Tonemapper.Quality=3; ⚫️DEF 5 🟢0 for PERFORMANCE ⚪️EDITED
+r.TranslucencyLightingVolume=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.TranslucencyLightingVolumeDim=32; ⚫️DEF 48 🟢32 for PERFORMANCE ⚪️EDITED
+r.ViewDistanceScale=0.8; ⚫️DEF 1 🟢0.8 for PERFORMANCE ⚪️EDITED
+r.VolumetricCloud.ShadowMap=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.VolumetricCloud.SkyAO=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.VolumetricCloud=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog.GridPixelSize=32; ⚫️DEF 16 ⚪️EDITED
+r.VolumetricFog.HistoryMissSupersampleCount=1; ⚫️DEF 4 🟢0 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog.InjectShadowedLightsSeparately=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.VolumetricFog=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Vulkan.Depth24Bit=1; ⚫️DEF 0 🟢1 for PERFORMANCE ⚪️EDITED
+r.Water.EnableShallowWaterSimulation=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.EnableUnderwaterPostProcess=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.SingleLayer.Reflection=1; ⚫️DEF 1 🟢0 for PERFORMANCE
+r.Water.SingleLayer.SSR=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+r.Water.SingleLayer.SSRTAA=0; ⚫️DEF 1 🟢0 for PERFORMANCE ⚪️EDITED
+rhi.SyncInterval=0; ⚫️DEF 1 ⚪️EDITED
+rhi.SyncSlackMS=0; ⚫️DEF 10 ⚪️EDITED
 ```
-</p>
-</details>
 
 ---
 
-#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
-
-BaseInventoryCapacity set to 999999
+<details><summary>Open Input.ini and edit input commands or add them</summary>
+<p>
+press <kbd>⊞ Win+R</kbd> then copy paste
 <br>
-HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/Input.ini
 <br>
-[More Faster XP](https://www.nexusmods.com/kingdomcomedeliverance/mods/1129)
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/Input.ini
 <br>
-[Easy Sharpening](https://www.nexusmods.com/kingdomcomedeliverance/mods/336)
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/Input.ini
 <br>
-[Ultimate Repair Kit 2.0 Plus](https://www.nexusmods.com/kingdomcomedeliverance/mods/1292)
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/Input.ini
+<br>
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/Input.ini
+</p>
+</details>
 
 ```python
-<?xml version="1.0" encoding="us-ascii"?>
-<database name="hammerheart">
-  <table name="rpg_param" version="1">
-    <header>
-      <column name="item_category" type="character varying" />
-      <column name="skill_id" type="integer" />
-      <column name="perk_id" type="uuid" />
-      <column name="rpg_param_key" type="character varying" />
-      <column name="rpg_param_value" type="real" />
-    </header>
-    <rows>
-      <row rpg_param_key="BaseInventoryCapacity" rpg_param_value="999999" />
-      <row item_category="armor.horse_bridle.*" skill_id="8" />
-      <row item_category="armor.horse_saddle.*" skill_id="8" />
-      <row rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
-      <row rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
-      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitCapacity" rpg_param_value="999999999" />
-      <row perk_id="01c3b32a-5751-4c98-b6ab-258d02370382" rpg_param_key="RepairKitItemHealthBestLimit" rpg_param_value="0" />
-      <row rpg_param_key="AlchemyXPPerSuccessfullBrewing" rpg_param_value="60" />
-      <row rpg_param_key="AlchemyXPPerAutocookBrewingRelative" rpg_param_value="0.2" />
-      <row rpg_param_key="FactionAngrinessDecayExp" rpg_param_value="3" />
-      <row rpg_param_key="HerbGatherXP" rpg_param_value="15" />
-      <row rpg_param_key="HorseRidingXPPerDistance" rpg_param_value="18.8" />
-      <row rpg_param_key="HoundmasterXPContextCommand" rpg_param_value="3" />
-      <row rpg_param_key="HoundmasterXPFeed" rpg_param_value="38" />
-      <row rpg_param_key="HoundmasterXPFetch" rpg_param_value="7.5" />
-      <row rpg_param_key="HoundmasterXPHit" rpg_param_value="3" />
-      <row rpg_param_key="HoundmasterXPKill" rpg_param_value="30" />
-      <row rpg_param_key="HoundmasterXPPlay" rpg_param_value="22.5" />
-      <row rpg_param_key="HoundmasterXPPOIDiscovery" rpg_param_value="30" />
-      <row rpg_param_key="HoundmasterXPPraise" rpg_param_value="22.5" />
-      <row rpg_param_key="HunterXPKill" rpg_param_value="22.5" />
-      <row rpg_param_key="LockPickingStealthXP" rpg_param_value="12" />
-      <row rpg_param_key="LockPickingSuccessXPMulCoef" rpg_param_value="27" />
-      <row rpg_param_key="NonSkillBookXP" rpg_param_value="45" />
-      <row rpg_param_key="PickpocketingFailXPMod" rpg_param_value="0.5" />
-      <row rpg_param_key="PickpocketingStealthXP" rpg_param_value="18" />
-      <row rpg_param_key="PickpocketingXP" rpg_param_value="22.5" />
-      <row rpg_param_key="ReadingXpPerHour" rpg_param_value="30" />
-      <row rpg_param_key="SecondaryStatXPRatio" rpg_param_value="0.8" />
-      <row rpg_param_key="SkillXPBlock" rpg_param_value="3" />
-      <row rpg_param_key="SkillXPComboHit" rpg_param_value="6" />
-      <row rpg_param_key="SkillXPHit" rpg_param_value="3" />
-      <row rpg_param_key="SkillXPKill" rpg_param_value="18" />
-      <row rpg_param_key="SkillXPPerfectBlock" rpg_param_value="12" />
-      <row rpg_param_key="SkillXPRiposte" rpg_param_value="12" />
-      <row rpg_param_key="SkillXPUseRepairKit" rpg_param_value="7.5" />
-      <row rpg_param_key="StatXPComboHit" rpg_param_value="6" />
-      <row rpg_param_key="StatXPHit" rpg_param_value="3" />
-      <row rpg_param_key="StatXPKill" rpg_param_value="12" />
-      <row rpg_param_key="StatXPSpeechPerSequence" rpg_param_value="2" />
-      <row rpg_param_key="StatXPVitalityPerDistance" rpg_param_value="12" />
-      <row rpg_param_key="StatXPVitalityPerJump" rpg_param_value="0.8" />
-      <row rpg_param_key="StatXPVitalityPerKill" rpg_param_value="22.5" />
-      <row rpg_param_key="StatXPVitalityPerVault" rpg_param_value="1.1" />
-      <row rpg_param_key="StealthAttackFailXp" rpg_param_value="15" />
-      <row rpg_param_key="StealthAttackMaxXp" rpg_param_value="75" />
-      <row rpg_param_key="StealthAttackMinXp" rpg_param_value="37.5" />
-      <row rpg_param_key="SharpeningMinIdealAngle" rpg_param_value="0" />
-      <row rpg_param_key="SharpeningMaxIdealAngle" rpg_param_value="0.98" />
-      <row rpg_param_key="SharpeningMinDestructionAngle" rpg_param_value="0.99" />
-      <row rpg_param_key="SharpeningMaxDestructionAngle" rpg_param_value="1" />
-      <row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
-      <row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
-      <row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
-      <row rpg_param_key="FullClothDirtyingOnFullSpeed" rpg_param_value="5000" />
-    </rows>
-  </table>
-</database>
+[/Script/Engine.InputSettings]
+bAltEnterTogglesFullscreen=1;
+bF11TogglesFullscreen=0; 
+bEnableMouseSmoothing=0;
+bViewAccelerationEnabled=0;
+InitialButtonRepeatDelay=0.2;------def 0.2
+ButtonRepeatDelay=0.1;------def 0.1
+DoubleClickTime=0.1;------def 0.25
 ```
+
+---
+
+<details><summary>Open GameUserSettings.ini these commands will overwrite your config so make sure they are correct also set your scalability groups 0 low 1 med  2 high 3 epic 4 cinematic, check for new stuff after updates</summary>
+<p>
+press <kbd>⊞ Win+R</kbd> then copy paste
+<br>
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
+%localappdata%/SessionGame/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+<br>
+%localappdata%/Chivalry 2/Saved/Config/WindowsNoEditor/GameUserSettings.ini
+</p>
+</details>
+
+```python
+TextureStreamPoolSizeStorage=(Value=)
+MaxAnisotropy=(Value=)
+FoliageMinLOD=(Value=)
+HZBOcclusion=(Value=)
+ContactShadows=(Value=)
+DetailMode=(Value=)
+AudioQualityLevel=3
+MaxAnisotropy=8
+bUseVSync=0
+GlobalSensitivity=0.183
+MaxFPS=
+FrameRateLimit=
+MenuFrameRateLimit=
+HDRDisplayOutputNits=
+DoubleKeyPressTime=0.1
+DistanceFieldShadows=1;
+Gamma=2.2
+TAASampleStorage=4
+bRTXEnabled=0
+bRTXReflectionsEnabled=0
+bRTXShadowsEnabled=0
+bRTXAmbientOcclusionEnabled=0
+DlssQualitySetting=
+ResolutionScaleModifier=
+DFAO=
+Tessellation=(Value=)
+TessellationMode=(Value=)
+bTelemetryEnabled=0
+bUseDynamicResolution=0
+FullscreenMode=0
+PreferredFullscreenMode=0
+ContactShadows=0
+PostFX_Saturation=1.2
+PostFX_Sharpness=0
+OverrideOptions=(("r.PlaceHolder1", (Value=0,bModified=True)),("r.PlaceHolder2", (Value=1,bModified=False)));------works like engineini but in gameusersettingsini
+OverrideOptions=(("r.Streaming.PoolSize", (Value=800,bModified=True)));------another example
+
+[ScalabilityGroups]
+sg.ResolutionQuality=100
+sg.ViewDistanceQuality=2
+sg.AntiAliasingQuality=2
+sg.PostProcessQuality=2
+sg.ShadowQuality=2
+sg.TextureQuality=2
+sg.EffectsQuality=2
+sg.FoliageQuality=2
+sg.ShadingQuality=2
+sg.AnimationQuality=2
+```
+
+---
+
+<details><summary>Open DeviceProfiles.ini and textures lods, skip this and just use the games texture settings imo</summary>
+<p>
+press <kbd>⊞ Win+R</kbd> then copy paste
+<br>
+%localappdata%/SquadGame/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
+%localappdata%/GroundBranch/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+<br>
+%localappdata%/ReadyOrNot/Saved/Config/WindowsNoEditor/DeviceProfiles.ini
+</p>
+</details>
+
+```python
+[/Script/Engine.TextureLODSettings]
+TextureLODGroups=(Group=TEXTUREGROUP_World,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WorldSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Character,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_CharacterSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Weapon,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_WeaponSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Vehicle,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleNormalMap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_VehicleSpecular,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Cinematic,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Effects,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_EffectsNotFiltered,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Skybox,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_UI,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_Lightmap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Shadowmap,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,NumStreamedMips=3)
+TextureLODGroups=(Group=TEXTUREGROUP_RenderTarget,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_MobileFlattened,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=1,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Heightmap,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Terrain_Weightmap,MaxLODSize=4096,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Bokeh,MaxLODSize=256,OptionalMaxLODSize=128,OptionalLODBias=1,MaxLODSize_Smaller=128,MaxLODSize_Smallest=64LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=linear,MipFilter=linear)
+TextureLODGroups=(Group=TEXTUREGROUP_Pixels2D,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=point,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Impostor,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_ImpostorNormalDepth,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_HierarchicalLOD,MaxLODSize=4096,OptionalMaxLODSize=1024,OptionalLODBias=0,MaxLODSize_Smaller=512,MaxLODSize_Smallest=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project01,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,HighPriorityLoad=true)
+TextureLODGroups=(Group=TEXTUREGROUP_Project02,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project03,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project04,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point,MipGenSettings=TMGS_NoMipmaps)
+TextureLODGroups=(Group=TEXTUREGROUP_Project05,MaxLODSize=512,MinLODSize=256,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=0,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project06,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=1,LODBias_Smaller=1,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project07,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project08,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project09,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project10,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project11,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project12,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+TextureLODGroups=(Group=TEXTUREGROUP_Project13,MaxLODSize=512,OptionalMaxLODSize=256,OptionalLODBias=0,MaxLODSize_Smaller=256,MaxLODSize_Smallest=128,LODBias=0,LODBias_Smaller=0,LODBias_Smallest=1,MinMagFilter=aniso,MipFilter=point)
+```
+
+---
+
+#### in nvidia control panel
+
+##### 1. 3D settings -> adjust image settings with preview -> use my preference emphasizing performance apply.
+
+##### 2. click on use the advanced 3D image settings and apply then click "take me there"
+
+##### 3. Anisotropic filtering:  set Application-controlled (you can force the setting in here if you can't notice it working in certain games)
+
+##### 4. Antialiasing - mode: set Application-controlled
+
+##### 5. Low latency mode (Only works with dx11 and lower api):
+
+###### Off and ~85% gpu usage for multiple frame buffers sacrificing latency (cap fps til gpu usage is ~85%) (for visual fluidity of frames)
+
+###### On forces 1 frame buffer (for lower latency than off) (for visual fluidity of frames)
+
+###### Ultra and/or nvidia relfex (in-game dx12 only) and ~97% gpu usage for lowest latency (could be less fluid frames at low fps)
+
+##### 6. Power management mode:  prefer max performance  (this is the "+ boost" in reflex + boost)
+
+##### 7. Preferred refresh rate:  Highest available
+
+##### 8. Texture filtering - anisotropic sample optimization:  on  (off will look better if this even works in your game) (you may need to reapply because NVCP will reset when you change other settings)
+
+##### 9. Texture filtering - negative LOD bias:  allow (allows -1,-2 ect bias) clamp (0 mipmap bias) + integers give more performance at cost of bland textures, most game devs make their HQ textures with a -1 clamp so might want to just leave this on allow and change textures in game (you may need to re-apply because NVCP will reset when you change other settings)
+
+##### 10. Texture filtering quality:  high performance
+
+##### 11. Texture filtering - trilinear optimization:  on
+
+#####  12. Vertical sync:  Off
+
+#####  13. Display -> Adjust desktop size and position -> set no scaling and Perform scaling on: Display
+
+<details><summary>14. Turn on Message-signaled interrupts (MSIs) (better than line based interrupt method) click for how to</summary>
+<p>
+1. NVCleanstall enabling it in advanced settings before installing or
+<br>
+2. use Wtools enable it and restart or
+<br>
+3. find ID: open device manager right click your GPU properties and click on events tab
+<br>
+looks like this:
+<br>
+HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Enum\PCI\VEN_10DE&DEV_1E84&SUBSYS_139E10DE&REV_A1\4&3aaa5e18&0&0008\Device Parameters\Interrupt Management\MessageSignaledInterruptProperties
+<br>
+find in regedit and set MSISupported to 1 then restart
+</p>
+</details>
