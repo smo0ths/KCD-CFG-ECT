@@ -1,7 +1,6 @@
+## updated 1/9/2025 :ramen:
 
-#### updated 1/29/2024 :ramen:
-
-###### my config and stuff for kcd hf
+### my config and stuff for kcd hf updated for wh_sys_version = "1.9.6"
 
 #### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
@@ -9,23 +8,34 @@
 
 ```python
 ;Add launch commands: +exec user.cfg -devmode
+;and restart after getting to main menu
+
+;
 con_restricted=0;
-sys_MaxFPS=152;------def 0------changed to 152*
-sys_spec=0;------sets custom spec
-sys_spec_GameEffects=3;
-sys_spec_Light=3;
-sys_spec_ObjectDetail=3;
-sys_spec_Particles=3;
-sys_spec_Physics=3;
-sys_spec_PostProcessing=3;
-sys_spec_Shading=3;
-sys_spec_Shadows=3;
-sys_spec_Sound=3;
-sys_spec_Texture=3;
-sys_spec_TextureResolution=7;------HD textures on
-sys_spec_Vegetation=3;
-sys_spec_VolumetricEffects=3;
-sys_spec_Water=3;
+
+;
+sys_MaxFPS=158; 🔵 def 0 🔴
+
+;
+sys_spec=0; 🔵 sets custom spec
+
+;
+sys_spec_GameEffects=7;
+sys_spec_Light=7;
+sys_spec_ObjectDetail=7;
+sys_spec_Particles=7;
+sys_spec_Physics=7;
+sys_spec_PostProcessing=7;
+sys_spec_Shading=7;
+sys_spec_Shadows=7;
+sys_spec_Sound=7;
+sys_spec_Texture=7;
+sys_spec_TextureResolution=7; 🔵 HD textures on
+sys_spec_Vegetation=7;
+sys_spec_VolumetricEffects=7;
+sys_spec_Water=7;
+
+;
 q_Renderer=3;
 q_ShaderFX=3;
 q_ShaderGeneral=3;
@@ -39,90 +49,56 @@ q_ShaderSky=3;
 q_ShaderTerrain=3;
 q_ShaderVegetation=3;
 q_ShaderWater=3;
-Bind 0 "exec user.cfg";
-Bind 8 "g_showHUD 0";
-Bind 9 "g_showHUD 1";
-Bind f1 "sys_MaxFPS 111";
-Bind f2 "sys_MaxFPS 152";
-Bind f3 "exec TEST1.cfg";
-Bind f4 "exec TEST2.cfg";
-cl_fov=68;------def 60------changed to 68*
-pl_movement.power_sprint_targetFOV=68;------def 55------changed to 68*
-r_DrawNearFOV=68;------def 60------changed to 68*
+
+;
+Bind 0 g_showHUD 0;
+Bind 9 g_showHUD 1;
+Bind f1 sys_MaxFPS 158;
+Bind f2 sys_MaxFPS 60;
+Bind f3 exec TEST1.cfg;
+Bind f4 exec TEST2.cfg;
+
+;
+cl_fov=68; 🔵 def 60 🔴
 cl_sensitivity=10;
+g_skipIntro=1; 🔵 def 0 🔴
 i_mouse_accel=0;
 i_mouse_smooth=0;
-g_skipIntro=1;------def 0------changed to 1*
+pl_movement.power_sprint_targetFOV=68; 🔵 def 55 🔴
+r_DrawNearFOV=68; 🔵 def 60 🔴
 r_Vsync=0;
-wh_cs_PlayerLockDisabled=0;------def 0
-wh_horse_CameraCentering=0;------def 0.2------changed to 0*
-wh_pl_showfirecursor=1;------def 0------changed to 1*
-ca_AttachmentCullingRation=300;------def 360------changed to 300*
-e_CoverageBufferTerrainLodShift=0;------def 2------changed to 0*
-e_CullVegActivation=30;------def 50------changed to 30*
-e_DecalsLifeTimeScale=1;------def 2------changed to 1*
-e_DecalsRange=10;------def 20------changed to 10*
-e_GsmRangeStep=2.5;------def 3------changed to 2.5*
-e_LodFaceAreaTargetSize=0.0006;------def 0.001------changed to 0.0006*
-e_LodRatio=25;------def 25
-e_MergedMeshesInstanceDist=5;------def 8------changed to 5*
-e_MergedMeshesLodRatio=1;------def 5------changed to 1*
-e_MergedMeshesPool=16384;------def 8192 change to 16384
-e_MergedMeshesViewDistRatio=85;------def 70------changed to 85*
-e_ObjShadowCastSpec=2;------def 3------changed to 2*
-e_PhysProxyTriLimit=5000;------def 10000------changed to 5000*
-e_ShadowsBlendCascades=0;------def 2------changed to 0*
-e_ShadowsCacheUpdate=1;------def 2------changed to 1*
-e_ShadowsCastViewDistRatio=0.8;------def 1------changed to 0.8*
-e_ShadowsCastViewDistRatioMulInvis=0.2;------def 0.4------changed to 0.2*
-e_ShadowsMaxTexRes=1024;------def 1024
-e_ShadowsUpdateViewDistRatio=80;------def 100------changed to 80*
-e_SkyQuality=2;------def 2------1 for PERFORMANCE
-e_StreamCgfPoolSize=1024;------def 512------changed to 1024*
-e_svoTI_SSAOAmount=1.5;------def 1------changed to 1.5*
-e_TerrainDetailMaterialsViewDistZ=100;------def 80------changed to 100*
-e_TerrainLodRatio=0.5;------def 0.3------changed to 0.5*
-e_TerrainOcclusionCullingMaxDist=150;------def 200------changed to 150*
-e_UberlodDistanceRatio=1.9;------def 1.8------changed to 1.9*
-e_ViewDistRatioVegetation=65;------def 55------changed to 65*
-e_VolumetricFog=0;------def 0
-es_DebrisLifetimeScale=0.6;------def 1------changed to 0.6*
-es_maxphysdistcloth=100;------def 300------changed to 100*
-g_breakage_particles_limit=80;------def 160------changed to 80*
-gpu_Particle_Physics=0;------def 0
-p_max_MC_iters=4000;------def 6000------changed to 4000*
-r_AntialiasingMode=3;------def 1------changed to 3*
-r_AntialiasingTAAPattern=3;------def 1------changed to 3*
-r_AntialiasingTAASharpening=0;------def 0.2------changed to 0*
-r_BatchType=1;------def 1
-r_DeferredShadingAreaLights=1;------def 1
-r_DepthBits=32;------def 24------changed to 32*
-r_FogShadowsWater=1;------def 0------changed to 1*
-r_HDRBloom=0;------def 1------changed to 0*
-r_HDRVignetting=0;------def 1------changed to 0*
+wh_cs_PlayerLockDisabled=0; 🔵 def 0
+wh_horse_CameraCentering=0; 🔵 def 0.2 🔴
+wh_pl_showfirecursor=1; 🔵 def 0 🔴
+
+;
+e_GI=1;
+e_ObjQuality=4;
+e_ObjShadowCastSpec=7;
+e_ParticlesMotionBlur=0;
+e_ShadowsMaxTexRes=2048;
+e_SkyQuality=1;
+e_TerrainAo=1;
+e_ViewDistRatioVegetation=125;
+e_VolumetricFog=1;
+gpu_Particle_Physics=1;
+r_AntialiasingMode=3;
+r_AntialiasingTAAPattern=1;
+r_AntialiasingTAASharpening=0.2;
+r_ChromaticAberration=0;
+r_HDRBloom=1;
+r_HDRVignetting=1;
 r_MotionBlur=0;
-r_RainMaxViewDist_Deferred=170;------def 150------changed to 170*
-r_ShadowCastingLightsMaxCount=12;------def 16------changed to 12*
-r_ShadowsBias=0.00001;------def 0.00008------changed to 0.00001*
-r_ShadowsCacheResolutions=6324,4214,2810,1872,624;------def 6324,4214,2810,1872,624
-r_ShadowsScreenSpace=1;------def 2------changed to 1*
-r_ssdoAmountAmbient=2;------def 1------changed to 2*
-r_ssdoAmountDirect=4;------def 1.5------changed to 4*
-r_ssdoAmountReflection=5;------def 4------changed to 5*
-r_ssdoRadius=1;------def 0.3------changed to 1*
-r_ssdoRadiusMin=0.02;------def 0.1------changed to 0.02*
-r_SSReflections=0;------def 1------changed to 0*
-r_SuperSampling=1;------def 1
-r_TexMaxAnisotropy=8;------def 4------changed to 8*
-r_TexMinAnisotropy=8;------def 4------changed to 8*
-r_TexNoAnisoAlphaTest=0;------def 0------1 for PERFORMANCE
-r_VolumetricFogSunLightCorrection=0;------def 1------changed to 0*
-r_VolumetricFogTexDepth=8;------def 32------changed to 8*
-r_VolumetricFogTexScale=25;------def 10------changed to 25*
-r_WaterCaustics=0;------def 1------changed to 0
-r_WaterGodRays=0;------def 1------changed to 0
-r_WaterReflectionsQuality=3;------def 4------changed to 3*
-r_WaterTessellationHW=0;------def 1------changed to 0*
+r_MotionBlurQuality=0;
+r_SilhouettePOM=0;
+r_SSReflections=1;
+r_SSReflHalfRes=1;
+r_TexturesStreamPoolSize=6144;
+r_VolumetricFogSunLightCorrection=1;
+r_WaterCaustics=0;
+r_WaterGodRays=0;
+r_WaterReflectionsQuality=0;
+sys_spec_Quality=4;
 ```
 
 ---
@@ -135,7 +111,7 @@ r_WaterTessellationHW=0;------def 1------changed to 0*
 
 [Remove Those Stupid Trails](https://www.nexusmods.com/kingdomcomedeliverance/mods/7)
 
-[Instant Herb Picking with hand movement](https://www.nexusmods.com/kingdomcomedeliverance/mods/367)
+removed Instant Herb Picking with hand movement (completely changed in update ipl_patch_010900.pak)
 
 [Alternate Food Spoil (Updated)](https://www.nexusmods.com/kingdomcomedeliverance/mods/1065)
 
@@ -152,15 +128,17 @@ r_WaterTessellationHW=0;------def 1------changed to 0*
 [No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
 
 [No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
+^remove blood_hit_1_ui.dds in zzz_fuxsart_no_blood_on_screen.pak (was changed in ipl_patch_010902.pak)
 
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
 
 [No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
 
-UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder)
+UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder edit dds files if you want)
 
-<details><summary>Quicksave (click for edits and link)</summary>
-<p>
+---
+
+## edit Quicksave (defaultprofile.xml)
 
 [Quicksave](https://www.nexusmods.com/kingdomcomedeliverance/mods/1282)
 
@@ -177,12 +155,10 @@ also had to add:
 <action name="horse_dismount" onPress="1" onRelease="1"
 the onRelease="1" part after those to fix getting off a horse...
 ```
-</p>
-</details>
 
 ---
 
-#### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
+## Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
 
 BaseInventoryCapacity set to 999999
 <br>
