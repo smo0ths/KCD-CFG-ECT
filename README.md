@@ -125,10 +125,8 @@ removed Instant Herb Picking with hand movement (completely changed in update ip
 
 [HelmetVision](https://www.nexusmods.com/kingdomcomedeliverance/mods/1337)
 
-[No Helmet Vision](https://www.nexusmods.com/kingdomcomedeliverance/mods/28) (removed)
-
 [No Blood On Screen (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/58)
-^remove blood_hit_1_ui.dds in zzz_fuxsart_no_blood_on_screen.pak (was changed in ipl_patch_010902.pak)
+<- remove blood_hit_1_ui.dds in zzz_fuxsart_no_blood_on_screen.pak (was changed in ipl_patch_010902.pak)
 
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
 
