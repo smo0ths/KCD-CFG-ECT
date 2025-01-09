@@ -1,17 +1,16 @@
 
-#### updated 12/4/2022 :ramen:
+#### updated 1/29/2024 :ramen:
 
 ###### my config and stuff for kcd hf
-
-###### Use Nvidia Image Scaling and turn down in game res for more fps
 
 #### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
 
 ---
 
 ```python
+;Add launch commands: +exec user.cfg -devmode
 con_restricted=0;
-sys_MaxFPS=162;------def 0------changed to 162*
+sys_MaxFPS=152;------def 0------changed to 152*
 sys_spec=0;------sets custom spec
 sys_spec_GameEffects=3;
 sys_spec_Light=3;
@@ -44,12 +43,12 @@ Bind 0 "exec user.cfg";
 Bind 8 "g_showHUD 0";
 Bind 9 "g_showHUD 1";
 Bind f1 "sys_MaxFPS 111";
-Bind f2 "sys_MaxFPS 162";
+Bind f2 "sys_MaxFPS 152";
 Bind f3 "exec TEST1.cfg";
 Bind f4 "exec TEST2.cfg";
-cl_fov=73;------def 60------changed to 73*
-pl_movement.power_sprint_targetFOV=73;------def 55------changed to 73*
-r_DrawNearFOV=73;------def 60------changed to 73*
+cl_fov=68;------def 60------changed to 68*
+pl_movement.power_sprint_targetFOV=68;------def 55------changed to 68*
+r_DrawNearFOV=68;------def 60------changed to 68*
 cl_sensitivity=10;
 i_mouse_accel=0;
 i_mouse_smooth=0;
@@ -75,7 +74,7 @@ e_PhysProxyTriLimit=5000;------def 10000------changed to 5000*
 e_ShadowsBlendCascades=0;------def 2------changed to 0*
 e_ShadowsCacheUpdate=1;------def 2------changed to 1*
 e_ShadowsCastViewDistRatio=0.8;------def 1------changed to 0.8*
-e_ShadowsCastViewDistRatioMulInvis=0.1;------def 0.4------changed to 0.1*
+e_ShadowsCastViewDistRatioMulInvis=0.2;------def 0.4------changed to 0.2*
 e_ShadowsMaxTexRes=1024;------def 1024
 e_ShadowsUpdateViewDistRatio=80;------def 100------changed to 80*
 e_SkyQuality=2;------def 2------1 for PERFORMANCE
@@ -181,22 +180,6 @@ the onRelease="1" part after those to fix getting off a horse...
 </p>
 </details>
 
-<details><summary>Ride horse threw rivers (make mod folder)</summary>
-<p>
-
-#### zzzz_horse_ignore_water_barrier\Data\zzzz_horse_ignore_water_barrier.pak\Libs\MaterialEffects\SurfaceTypes.xml
-
-```python
-add  horse_ignore="1" in here
-
-  <SurfaceType name="mat_deep_water_barrier">
-    <Physics friction="0.5" elasticity="0.050000001"  pierceability="11"  dbg_color="123,103,65" horse_ignore="1" />
-    <Barrier distance="3" slowdown="1" monologMetaroleId="335"/>
-  </SurfaceType>
-```
-</p>
-</details>
-
 ---
 
 #### Added all these mods in one rpg_param.xml (make your own so there is no conflicts):
@@ -282,4 +265,3 @@ HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
   </table>
 </database>
 ```
-
