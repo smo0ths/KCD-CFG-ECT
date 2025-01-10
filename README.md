@@ -1,4 +1,4 @@
-## updated 1/9/2025 :ramen:
+## updated 1/10/2025 :ramen:
 
 ### my config and stuff for kcd hf updated for wh_sys_version = "1.9.6"
 
@@ -76,16 +76,17 @@ e_GI=1;
 e_ObjQuality=4;
 e_ObjShadowCastSpec=7;
 e_ParticlesMotionBlur=0;
-e_ShadowsMaxTexRes=2048;
+e_ShadowsMaxTexRes=1872; 🔵 2048 causes flicker indoors
 e_SkyQuality=1;
 e_TerrainAo=1;
 e_ViewDistRatioVegetation=125;
-e_VolumetricFog=1;
+e_VolumetricFog=1; 🔵 toggle this to your liking
 gpu_Particle_Physics=1;
 r_AntialiasingMode=3;
 r_AntialiasingTAAPattern=1;
 r_AntialiasingTAASharpening=0.2;
 r_ChromaticAberration=0;
+r_DepthOfField=2;
 r_HDRBloom=1;
 r_HDRVignetting=1;
 r_MotionBlur=0;
