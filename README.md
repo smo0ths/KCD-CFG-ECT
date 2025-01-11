@@ -1,4 +1,4 @@
-## updated 1/10/2025 :ramen:
+## updated 1/11/2025 :ramen:
 
 ### my config and stuff for kcd hf updated for wh_sys_version = "1.9.6"
 
@@ -7,16 +7,15 @@
 ---
 
 ```python
-;Add launch commands: +exec user.cfg -devmode
-;and restart after getting to main menu
+; Add launch commands: +exec user.cfg -devmode
+
+; and restart after getting to main menu
+
+; def is usually max settings
 
 ;
 con_restricted=0;
-
-;
-sys_MaxFPS=158; 🔵 def 0 🔴
-
-;
+sys_MaxFPS=158; 🔵 def 0
 sys_spec=0; 🔵 sets custom spec
 
 ;
@@ -59,47 +58,103 @@ Bind f3 exec TEST1.cfg;
 Bind f4 exec TEST2.cfg;
 
 ;
-cl_fov=68; 🔵 def 60 🔴
+cl_fov=68; 🔵 def 60
 cl_sensitivity=10;
-g_skipIntro=1; 🔵 def 0 🔴
+g_skipIntro=1; 🔵 def 0
 i_mouse_accel=0;
 i_mouse_smooth=0;
-pl_movement.power_sprint_targetFOV=68; 🔵 def 55 🔴
-r_DrawNearFOV=68; 🔵 def 60 🔴
+pl_movement.power_sprint_targetFOV=68; 🔵 def 55
+r_DrawNearFOV=68; 🔵 def 60
 r_Vsync=0;
-wh_cs_PlayerLockDisabled=0; 🔵 def 0
-wh_horse_CameraCentering=0; 🔵 def 0.2 🔴
-wh_pl_showfirecursor=1; 🔵 def 0 🔴
 
 ;
-e_GI=1;
-e_ObjQuality=4;
-e_ObjShadowCastSpec=7;
+wh_cs_PlayerLockDisabled=0; 🔵 def 0
+wh_horse_CameraCentering=0; 🔵 def 0.2
+wh_pl_showfirecursor=1; 🔵 def 0
+
+; doubled test
+e_StreamCgfPoolSize=1024;
+r_TexturesStreamPoolSize=8192;
+
+;
+ca_AttachmentCullingRation=425; 🔵 wh def 425
+e_Clouds=1; 🔵 def 1
+e_Fog=1; 🔵 def 1 🔵 test yourself
+e_GI=0;
+e_GIAmount=0.6;
+e_GICache=7; 🔵 def 7 min 0
+e_GIIterations=6; 🔵 def 6 max 32
+e_GIMaxDistance=100;
+e_GINumCascades=1;
+e_LodFaceAreaTargetSize=0.0006; 🔵 def 0.001
+e_LodRatio=70; 🔵 max slider 70 🔵 wh 60
+e_MergedMeshesInstanceDist=32; 🔵 wh 16
+e_MergedMeshesLodRatio=16; 🔵 wh 8
+e_MergedMeshesPool=16384; 🔵 wh 16384
+e_MergedMeshesViewDistRatio=100; 🔵 max slider 100 🔵 wh 85
 e_ParticlesMotionBlur=0;
+e_PhysProxyTriLimit=1000; 🔵 wh def 10000 🔴
+e_ShadowsCastViewDistRatio=1.6; 🔵 wh def 1.6
+e_ShadowsCastViewDistRatioLights=0.8; 🔵 wh def 0.8
+e_ShadowsCastViewDistRatioMulInvis=0.6; 🔵 wh def 0.6
 e_ShadowsMaxTexRes=1872; 🔵 2048 causes flicker indoors
 e_SkyQuality=1;
-e_TerrainAo=1;
-e_ViewDistRatioVegetation=125;
-e_VolumetricFog=1; 🔵 toggle this to your liking
+e_SkyUpdateRate=1;
+e_svoTI_SSAOAmount=1.5; 🔵 def 1
+e_TerrainAo=0;
+e_ViewDistRatio=150; 🔵 max slider 150 🔵 wh 125
+e_ViewDistRatioCustom=150;
+e_ViewDistRatioDetail=150;
+e_ViewDistRatioLights=150;
+e_VolumetricFog=0; 🔵 test yourself
+e_WaterOceanFFT=0; 🔵 def 1
+es_MaxPhysDist=200; 🔵 wh def 100
+es_MaxPhysDistInvisible=35; 🔵 wh def 25
 gpu_Particle_Physics=1;
+p_num_bodies_large_group=10; 🔵 wh def 100
 r_AntialiasingMode=3;
 r_AntialiasingTAAPattern=1;
-r_AntialiasingTAASharpening=0.2;
+r_AntialiasingTAASharpening=0; 🔵 def 0.2
 r_ChromaticAberration=0;
 r_DepthOfField=2;
+r_FogShadows=0; 🔵 def 0
+r_FogShadows=1; 🔵 def 0
+r_FogShadowsMode=0; 🔵 def 0
+r_FogShadowsWater=0; 🔵 def 1
 r_HDRBloom=1;
-r_HDRVignetting=1;
+r_HDRVignetting=0;
 r_MotionBlur=0;
 r_MotionBlurQuality=0;
+r_RainAmount=2; 🔵 def 1
+r_RainDistMultiplier=2.5; 🔵 wh def 2
+r_RainMaxViewDist_Deferred=170; 🔵 def 150
 r_SilhouettePOM=0;
-r_SSReflections=1;
+r_ssdoAmountAmbient=2; 🔵 def 1
+r_ssdoAmountDirect=4; 🔵 def 1.5
+r_ssdoAmountReflection=5; 🔵 def 4
+r_ssdoRadius=1; 🔵 def 0.3
+r_ssdoRadiusMin=0.02; 🔵 def 0.1
+r_SSReflections=0;
 r_SSReflHalfRes=1;
-r_TexturesStreamPoolSize=6144;
-r_VolumetricFogSunLightCorrection=1;
+r_VolumetricFogSunLightCorrection=1; 🔵 def 1
+r_VolumetricFogTexDepth=4; 🔵 default 32
+r_VolumetricFogTexScale=20; 🔵 def 1 🔵 wh def 10
 r_WaterCaustics=0;
 r_WaterGodRays=0;
 r_WaterReflectionsQuality=0;
+r_WaterTessellationHW=1;
+r_WaterVolumeCaustics=0; 🔵 def 1
 sys_spec_Quality=4;
+WH_AI_LOD_DistanceMax=90; 🔵 wh def 130 🔵 90,110,130
+WH_AI_LOD_DistanceMin=60; 🔵 wh def 100 🔵 60,80,100
+wh_cc_LodForAttachmentStreamOut=4; 🔵 def 6
+wh_cc_LodForItemStreamOutBase=15; 🔵 def 20
+wh_env_RainDiffuseDarkening=0.25; 🔵 wh def 0.2
+wh_env_RainDropsAmountMul=25; 🔵 wh def 15
+wh_env_RainDropsSpeedBase=3; 🔵 wh def 1.5
+wh_env_RainLayers=3; 🔵 wh def 3
+wh_pl_FOWEnabled=1; 🔵 wh def 1
+wh_pl_FOWVisibilityRadius=100; 🔵 wh def 100
 ```
 
 ---
