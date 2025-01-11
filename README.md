@@ -118,7 +118,6 @@ r_AntialiasingTAASharpening=0; 🔵 def 0.2
 r_ChromaticAberration=0;
 r_DepthOfField=2;
 r_FogShadows=0; 🔵 def 0
-r_FogShadows=1; 🔵 def 0
 r_FogShadowsMode=0; 🔵 def 0
 r_FogShadowsWater=0; 🔵 def 1
 r_HDRBloom=1;
