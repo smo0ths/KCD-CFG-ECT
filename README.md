@@ -1,17 +1,22 @@
-## updated 1/11/2025 :ramen:
+## updated 1/11/2025 for KCD v1.9.6 :ramen:
 
-### my config and stuff for kcd hf updated for wh_sys_version = "1.9.6"
+#### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
-#### Create a file in KingdomComeDeliverance/user.cfg and copy paste this and add launch commands (+exec user.cfg -devmode):
+#### delete cache folder %userprofile%/Saved Games/kingdomcome/shaders
+
+#### Add launch commands: +exec user.cfg -devmode
+
+#### and restart after getting to main menu
+
+#### all mods i use are under the config
 
 ---
 
 ```python
+; Create user.cfg in KingdomComeDeliverance folder and copy paste
+; delete cache folder %userprofile%/Saved Games/kingdomcome/shaders
 ; Add launch commands: +exec user.cfg -devmode
-
 ; and restart after getting to main menu
-
-; def is usually max settings
 
 ;
 con_restricted=0;
@@ -72,14 +77,32 @@ wh_cs_PlayerLockDisabled=0; 🔵 def 0
 wh_horse_CameraCentering=0; 🔵 def 0.2
 wh_pl_showfirecursor=1; 🔵 def 0
 
-; doubled test
-e_StreamCgfPoolSize=1024;
-r_TexturesStreamPoolSize=8192;
+;
+e_ParticlesThread=2; 🔵 def 1 🔴
+e_ShadowsPoolSize=4096; 🔵 def 4096 🔴 VRAM
+e_StreamCgfPoolSize=1024; 🔵 wh def 512 🔴 RAM
+gpu_Particle_Physics=1;
+r_MultiGPU=0; 🔵 def 1
+r_RenderTargetPoolSize=512; 🔵 def 0 🔴
+r_ShadersAsyncMaxThreads=4; 🔵 def 1 🔴
+r_TexturesStreaming=1; 🔵 def 1
+r_TexturesStreamingMaxRequestedMB=512; 🔵 wh def 20 🔴
+r_TexturesStreamingResidencyEnabled=1; 🔵 def 1
+r_TexturesStreamingResidencyThrottle=1; 🔵 def 0.5 🔴
+r_TexturesStreamPoolSize=8192; 🔵 wh def 4096 🔴 VRAM
+r_WaterUpdateThread=0; 🔵 def 5 🔴
+sys_budget_sysmem=1024; 🔵 def 512 🔴 RAM
+sys_budget_videomem=4096; 🔵 def 90 🔴 VRAM
+sys_limit_phys_thread_count=0; 🔵 def 1 🔴
+sys_PakStreamCache=1; 🔵 def 0 🔴
+sys_physics_CPU=2; 🔵 def 1 🔴
+sys_streaming_CPU=2; 🔵 def 1 🔴
+sys_streaming_CPU_worker=6; 🔵 def 5 🔴
 
 ;
 ca_AttachmentCullingRation=425; 🔵 wh def 425
 e_Clouds=1; 🔵 def 1
-e_Fog=1; 🔵 def 1 🔵 test yourself
+e_Fog=1; 🔵 def 1 🔴
 e_GI=0;
 e_GIAmount=0.6;
 e_GICache=7; 🔵 def 7 min 0
@@ -87,30 +110,34 @@ e_GIIterations=6; 🔵 def 6 max 32
 e_GIMaxDistance=100;
 e_GINumCascades=1;
 e_LodFaceAreaTargetSize=0.0006; 🔵 def 0.001
-e_LodRatio=70; 🔵 max slider 70 🔵 wh 60
-e_MergedMeshesInstanceDist=32; 🔵 wh 16
-e_MergedMeshesLodRatio=16; 🔵 wh 8
-e_MergedMeshesPool=16384; 🔵 wh 16384
+e_LodRatio=70; 🔵 max slider 70 🔵 wh def 60
+e_MergedMeshesInstanceDist=32; 🔵 wh def 16
+e_MergedMeshesLodRatio=16; 🔵 wh def 8
+e_MergedMeshesPool=16384; 🔵 wh def 16384
 e_MergedMeshesViewDistRatio=100; 🔵 max slider 100 🔵 wh 85
+e_ParticlesGI=1; 🔵 def 1
 e_ParticlesMotionBlur=0;
+e_ParticlesObjectCollisions=2; 🔵 def 2
+e_ParticlesPoolSize=16384; 🔵 def 16384 🔴
+e_ParticlesQuality=4; 🔵 def 4
+e_ParticlesShadows=1; 🔵 def 1
 e_PhysProxyTriLimit=1000; 🔵 wh def 10000 🔴
 e_ShadowsCastViewDistRatio=1.6; 🔵 wh def 1.6
 e_ShadowsCastViewDistRatioLights=0.8; 🔵 wh def 0.8
 e_ShadowsCastViewDistRatioMulInvis=0.6; 🔵 wh def 0.6
-e_ShadowsMaxTexRes=1872; 🔵 2048 causes flicker indoors
+e_ShadowsMaxTexRes=1872;
 e_SkyQuality=1;
 e_SkyUpdateRate=1;
 e_svoTI_SSAOAmount=1.5; 🔵 def 1
 e_TerrainAo=0;
+e_Tessellation=1; 🔵 def 1
+e_TessellationMaxDistance=30; 🔵 def 30
 e_ViewDistRatio=150; 🔵 max slider 150 🔵 wh 125
-e_ViewDistRatioCustom=150;
-e_ViewDistRatioDetail=150;
-e_ViewDistRatioLights=150;
-e_VolumetricFog=0; 🔵 test yourself
+e_VolumetricFog=0; 🔵 def 0 🔴
 e_WaterOceanFFT=0; 🔵 def 1
-es_MaxPhysDist=200; 🔵 wh def 100
-es_MaxPhysDistInvisible=35; 🔵 wh def 25
-gpu_Particle_Physics=1;
+es_MaxPhysDist=100; 🔵 wh def 200 🔴
+es_maxphysdistcloth=100; 🔵 wh def 300 🔴
+es_MaxPhysDistInvisible=25; 🔵 wh def 25
 p_num_bodies_large_group=10; 🔵 wh def 100 🔴
 r_AntialiasingMode=3;
 r_AntialiasingTAAPattern=1;
@@ -121,12 +148,16 @@ r_FogShadows=0; 🔵 def 0
 r_FogShadowsMode=0; 🔵 def 0
 r_FogShadowsWater=0; 🔵 def 1
 r_HDRBloom=1;
-r_HDRVignetting=0;
+r_HDRGrainAmount=0;
+r_HDRVignetting=0; 🔵 def 1
 r_MotionBlur=0;
 r_MotionBlurQuality=0;
+r_ParticlesHalfRes=0; 🔵 def 0
+r_ParticlesTessellation=1; 🔵 def 1
 r_RainAmount=2; 🔵 def 1
 r_RainDistMultiplier=2.5; 🔵 wh def 2
 r_RainMaxViewDist_Deferred=170; 🔵 def 150
+r_Refraction=1; 🔵 def 1
 r_SilhouettePOM=0;
 r_ssdoAmountAmbient=2; 🔵 def 1
 r_ssdoAmountDirect=4; 🔵 def 1.5
@@ -135,8 +166,12 @@ r_ssdoRadius=0.3; 🔵 def 0.3
 r_ssdoRadiusMin=0.02; 🔵 def 0.1
 r_SSReflections=0;
 r_SSReflHalfRes=1;
+r_TerrainAO=0; 🔵 def 7
+r_TerrainAO_FadeDist=8;
+r_TessellationTriangleSize=8; 🔵 def 8
+r_UseMaterialLayers=2; 🔵 def 2
 r_VolumetricFogSunLightCorrection=1; 🔵 def 1
-r_VolumetricFogTexDepth=4; 🔵 default 32
+r_VolumetricFogTexDepth=4; 🔵 def 32
 r_VolumetricFogTexScale=20; 🔵 def 1 🔵 wh def 10
 r_WaterCaustics=0;
 r_WaterGodRays=0;
@@ -144,12 +179,12 @@ r_WaterReflectionsQuality=0;
 r_WaterTessellationHW=1;
 r_WaterVolumeCaustics=0; 🔵 def 1
 sys_spec_Quality=4;
-WH_AI_LOD_DistanceMax=90; 🔵 wh def 130 🔵 90,110,130
-WH_AI_LOD_DistanceMin=60; 🔵 wh def 100 🔵 60,80,100
+WH_AI_LOD_DistanceMax=90; 🔴 wh 90,110,130
+WH_AI_LOD_DistanceMin=60; 🔴 wh 60,80,100
 wh_cc_LodForAttachmentStreamOut=4; 🔵 def 6
 wh_cc_LodForItemStreamOutBase=15; 🔵 def 20
 wh_env_RainDiffuseDarkening=0.25; 🔵 wh def 0.2
-wh_env_RainDropsAmountMul=25; 🔵 wh def 15
+wh_env_RainDropsAmountMul=15; 🔵 wh def 15
 wh_env_RainDropsSpeedBase=3; 🔵 wh def 1.5
 wh_env_RainLayers=3; 🔵 wh def 3
 wh_pl_FOWEnabled=1; 🔵 wh def 1
@@ -294,3 +329,5 @@ HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
   </table>
 </database>
 ```
+
+---
