@@ -1,4 +1,4 @@
-## updated 1/11/2025 for KCD v1.9.6 :ramen:
+## updated 1/12/2025 for KCD v1.9.6 :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -13,182 +13,232 @@
 ---
 
 ```python
-; Create user.cfg in KingdomComeDeliverance folder and copy paste
-; delete cache folder %userprofile%/Saved Games/kingdomcome/shaders
-; Add launch commands: +exec user.cfg -devmode
-; and restart after getting to main menu
+# Create user.cfg in KingdomComeDeliverance folder and copy paste
+# delete cache folder %userprofile%/Saved Games/kingdomcome/shaders
+# Add launch commands: +exec user.cfg -devmode
+# and restart after getting to main menu
 
-;
-con_restricted=0;
-sys_MaxFPS=158; 🔵 def 0
-sys_spec=0; 🔵 sets custom spec
+#
+con_restricted=0#
+sys_MaxFPS=158# 🔵 def 0
+sys_spec=0# 🔵 sets custom spec
 
-;
-sys_spec_GameEffects=7;
-sys_spec_Light=7;
-sys_spec_ObjectDetail=7;
-sys_spec_Particles=7;
-sys_spec_Physics=7;
-sys_spec_PostProcessing=7;
-sys_spec_Shading=7;
-sys_spec_Shadows=7;
-sys_spec_Sound=7;
-sys_spec_Texture=7;
-sys_spec_TextureResolution=7; 🔵 HD textures on
-sys_spec_Vegetation=7;
-sys_spec_VolumetricEffects=7;
-sys_spec_Water=7;
+#
+sys_spec_GameEffects=7#
+sys_spec_Light=7#
+sys_spec_ObjectDetail=7#
+sys_spec_Particles=7#
+sys_spec_Physics=7#
+sys_spec_PostProcessing=7#
+sys_spec_Shading=7#
+sys_spec_Shadows=7#
+sys_spec_Sound=7#
+sys_spec_Texture=7#
+sys_spec_TextureResolution=7# 🔵 HD textures on
+sys_spec_Vegetation=7#
+sys_spec_VolumetricEffects=7#
+sys_spec_Water=7#
 
-;
-q_Renderer=3;
-q_ShaderFX=3;
-q_ShaderGeneral=3;
-q_ShaderGlass=3;
-q_ShaderHDR=3;
-q_ShaderIce=3;
-q_ShaderMetal=3;
-q_ShaderPostProcess=3;
-q_ShaderShadow=3;
-q_ShaderSky=3;
-q_ShaderTerrain=3;
-q_ShaderVegetation=3;
-q_ShaderWater=3;
+#
+#q_Quality=#
+q_Renderer=3#
+q_ShaderFX=3#
+q_ShaderGeneral=3#
+q_ShaderGlass=3#
+q_ShaderHDR=3#
+q_ShaderIce=3#
+q_ShaderMetal=3#
+q_ShaderPostProcess=3#
+q_ShaderShadow=3#
+q_ShaderSky=3#
+q_ShaderTerrain=3#
+q_ShaderVegetation=3#
+q_ShaderWater=3# 🔵 wh def 2 🔴
 
-;
-Bind 0 g_showHUD 0;
-Bind 9 g_showHUD 1;
-Bind f1 sys_MaxFPS 158;
-Bind f2 sys_MaxFPS 60;
-Bind f3 exec TEST1.cfg;
-Bind f4 exec TEST2.cfg;
+#
+Bind 0 g_showHUD 0#
+Bind 9 g_showHUD 1#
+Bind f1 sys_MaxFPS 158#
+Bind f2 sys_MaxFPS 60#
+Bind f3 exec TEST1.cfg#
+Bind f4 exec TEST2.cfg#
 
-;
-cl_fov=68; 🔵 def 60
-cl_sensitivity=10;
-g_skipIntro=1; 🔵 def 0
-i_mouse_accel=0;
-i_mouse_smooth=0;
-pl_movement.power_sprint_targetFOV=68; 🔵 def 55
-r_DrawNearFOV=68; 🔵 def 60
-r_Vsync=0;
+#
+cl_fov=68# 🔵 def 60
+cl_sensitivity=10#
+g_skipIntro=1# 🔵 def 0
+i_mouse_accel=0#
+i_mouse_smooth=0#
+pl_movement.power_sprint_targetFOV=68# 🔵 def 55
+r_DrawNearFOV=68# 🔵 def 60
+r_Vsync=0#
 
-;
-wh_cs_PlayerLockDisabled=0; 🔵 def 0
-wh_horse_CameraCentering=0; 🔵 def 0.2
-wh_pl_showfirecursor=1; 🔵 def 0
+#
+wh_cs_PlayerLockDisabled=0# 🔵 def 0
+wh_horse_CameraCentering=0# 🔵 def 0.2
+wh_pl_showfirecursor=1# 🔵 def 0
 
-;
-e_ParticlesThread=2; 🔵 def 1 🔴
-e_ShadowsPoolSize=4096; 🔵 def 4096 🔴 VRAM
-e_StreamCgfPoolSize=1024; 🔵 wh def 512 🔴 RAM
-gpu_Particle_Physics=1;
-r_MultiGPU=0; 🔵 def 1
-r_RenderTargetPoolSize=512; 🔵 def 0 🔴
-r_ShadersAsyncMaxThreads=4; 🔵 def 1 🔴
-r_TexturesStreaming=1; 🔵 def 1
-r_TexturesStreamingMaxRequestedMB=512; 🔵 wh def 20 🔴
-r_TexturesStreamingResidencyEnabled=1; 🔵 def 1
-r_TexturesStreamingResidencyThrottle=1; 🔵 def 0.5 🔴
-r_TexturesStreamPoolSize=8192; 🔵 wh def 4096 🔴 VRAM
-r_WaterUpdateThread=0; 🔵 def 5 🔴
-sys_budget_sysmem=1024; 🔵 def 512 🔴 RAM
-sys_budget_videomem=4096; 🔵 def 90 🔴 VRAM
-sys_limit_phys_thread_count=0; 🔵 def 1 🔴
-sys_PakStreamCache=1; 🔵 def 0 🔴
-sys_physics_CPU=2; 🔵 def 1 🔴
-sys_streaming_CPU=2; 🔵 def 1 🔴
-sys_streaming_CPU_worker=6; 🔵 def 5 🔴
+# 🔴 edited sys
+sys_budget_sysmem=1024# 🔵 def 512 🔴 RAM
+sys_budget_videomem=4096# 🔵 def 90 🔴 VRAM
+sys_flash_check_filemodtime=1# 🔵 wh def 0 🔴
+sys_PakStreamCache=1# 🔵 def 0 🔴 RAM
 
-;
-ca_AttachmentCullingRation=425; 🔵 wh def 425
-e_Clouds=1; 🔵 def 1
-e_Fog=1; 🔵 def 1 🔴
-e_GI=0;
-e_GIAmount=0.6;
-e_GICache=7; 🔵 def 7 min 0
-e_GIIterations=6; 🔵 def 6 max 32
-e_GIMaxDistance=100;
-e_GINumCascades=1;
-e_LodFaceAreaTargetSize=0.0006; 🔵 def 0.001
-e_LodRatio=70; 🔵 max slider 70 🔵 wh def 60
-e_MergedMeshesInstanceDist=32; 🔵 wh def 16
-e_MergedMeshesLodRatio=16; 🔵 wh def 8
-e_MergedMeshesPool=16384; 🔵 wh def 16384
-e_MergedMeshesViewDistRatio=100; 🔵 max slider 100 🔵 wh 85
-e_ParticlesGI=1; 🔵 def 1
-e_ParticlesMotionBlur=0;
-e_ParticlesObjectCollisions=2; 🔵 def 2
-e_ParticlesPoolSize=16384; 🔵 def 16384 🔴
-e_ParticlesQuality=4; 🔵 def 4
-e_ParticlesShadows=1; 🔵 def 1
-e_PhysProxyTriLimit=1000; 🔵 wh def 10000 🔴
-e_ShadowsCastViewDistRatio=1.6; 🔵 wh def 1.6
-e_ShadowsCastViewDistRatioLights=0.8; 🔵 wh def 0.8
-e_ShadowsCastViewDistRatioMulInvis=0.6; 🔵 wh def 0.6
-e_ShadowsMaxTexRes=1872;
-e_SkyQuality=1;
-e_SkyUpdateRate=1;
-e_svoTI_SSAOAmount=1.5; 🔵 def 1
-e_TerrainAo=0;
-e_Tessellation=1; 🔵 def 1
-e_TessellationMaxDistance=30; 🔵 def 30
-e_ViewDistRatio=150; 🔵 max slider 150 🔵 wh 125
-e_VolumetricFog=0; 🔵 def 0 🔴
-e_WaterOceanFFT=0; 🔵 def 1
-es_MaxPhysDist=100; 🔵 wh def 200 🔴
-es_maxphysdistcloth=100; 🔵 wh def 300 🔴
-es_MaxPhysDistInvisible=25; 🔵 wh def 25
-p_num_bodies_large_group=10; 🔵 wh def 100 🔴
-r_AntialiasingMode=3;
-r_AntialiasingTAAPattern=1;
-r_AntialiasingTAASharpening=0; 🔵 def 0.2
-r_ChromaticAberration=0;
-r_DepthOfField=2;
-r_FogShadows=0; 🔵 def 0
-r_FogShadowsMode=0; 🔵 def 0
-r_FogShadowsWater=0; 🔵 def 1
-r_HDRBloom=1;
-r_HDRGrainAmount=0;
-r_HDRVignetting=0; 🔵 def 1
-r_MotionBlur=0;
-r_MotionBlurQuality=0;
-r_ParticlesHalfRes=0; 🔵 def 0
-r_ParticlesTessellation=1; 🔵 def 1
-r_RainAmount=2; 🔵 def 1
-r_RainDistMultiplier=2.5; 🔵 wh def 2
-r_RainMaxViewDist_Deferred=170; 🔵 def 150
-r_Refraction=1; 🔵 def 1
-r_SilhouettePOM=0;
-r_ssdoAmountAmbient=2; 🔵 def 1
-r_ssdoAmountDirect=4; 🔵 def 1.5
-r_ssdoAmountReflection=5; 🔵 def 4
-r_ssdoRadius=0.3; 🔵 def 0.3
-r_ssdoRadiusMin=0.02; 🔵 def 0.1
-r_SSReflections=0;
-r_SSReflHalfRes=1;
-r_TerrainAO=0; 🔵 def 7
-r_TerrainAO_FadeDist=8;
-r_TessellationTriangleSize=8; 🔵 def 8
-r_UseMaterialLayers=2; 🔵 def 2
-r_VolumetricFogSunLightCorrection=1; 🔵 def 1
-r_VolumetricFogTexDepth=4; 🔵 def 32
-r_VolumetricFogTexScale=20; 🔵 def 1 🔵 wh def 10
-r_WaterCaustics=0;
-r_WaterGodRays=0;
-r_WaterReflectionsQuality=0;
-r_WaterTessellationHW=1;
-r_WaterVolumeCaustics=0; 🔵 def 1
-sys_spec_Quality=4;
-WH_AI_LOD_DistanceMax=90; 🔴 wh 90,110,130
-WH_AI_LOD_DistanceMin=60; 🔴 wh 60,80,100
-wh_cc_LodForAttachmentStreamOut=4; 🔵 def 6
-wh_cc_LodForItemStreamOutBase=15; 🔵 def 20
-wh_env_RainDiffuseDarkening=0.25; 🔵 wh def 0.2
-wh_env_RainDropsAmountMul=15; 🔵 wh def 15
-wh_env_RainDropsSpeedBase=3; 🔵 wh def 1.5
-wh_env_RainLayers=3; 🔵 wh def 3
-wh_pl_FOWEnabled=1; 🔵 wh def 1
-wh_pl_FOWVisibilityRadius=100; 🔵 wh def 100
+# 🔵 def sys
+sys_budget_soundCPU=15# 🔵 def 15
+sys_flash_address_space=65536# 🔵 def 65536
+sys_flash_allow_reset_mesh_cache=1# 🔵 def 1
+sys_flash_curve_tess_error=2# 🔵 wh def 2
+sys_flash_edgeaa=1# 🔵 def 1
+sys_flash_newstencilclear=1# 🔵 def 1
+sys_flash_static_pool_size=0# 🔵 def 0
+sys_flash_use_arenas=1# 🔵 def 1
+sys_limit_phys_thread_count=0# 🔵 def 0
+sys_physics_CPU=0# 🔵def 0
+sys_spec_Quality=4# 🔵 def 4
+sys_streaming_CPU=1# 🔵 def 1
+sys_streaming_CPU_worker=5# 🔵 def 5
+
+# 🔴 edited engine
+e_ParticlesThread=2# 🔵 def 1 🔴
+e_ShadowsPoolSize=4096# 🔵 def 4096 🔴 VRAM
+e_StreamCgfPoolSize=1024# 🔵 wh def 512 🔴 RAM
+p_num_threads=6# 🔵 def 2 🔴
+r_MultiGPU=0# 🔵 def 1 🔴
+r_RenderTargetPoolSize=512# 🔵 def 0 🔴
+r_ShadersAsyncMaxThreads=4# 🔵 def 1 🔴
+
+# 🔵 def engine
+e_HwOcclusionCullingWater=1# 🔵 def 1
+gpu_Particle_Physics=1# 🔵 def 1
+p_cull_distance=100# 🔵 wh def 100
+r_MergeRenderChunks=1# 🔵 def 1
+r_ShadersDX11=1# 🔵 def 1
+r_WaterUpdateThread=5# 🔵 def 5
+
+# 🔴 edited texture
+r_TexPreallocateAtlases=1# 🔵 wh def 0 🔴
+r_TexturesStreamingMaxRequestedMB=512# 🔵 wh def 20 🔴
+r_TexturesStreamingResidencyThrottle=1# 🔵 def 0.5 🔴
+r_TexturesStreamingResidencyTime=120# 🔵 wh def 10 🔴
+r_TexturesStreamPoolSize=8192# 🔵 wh def 4096 🔴 VRAM
+
+# 🔵 def texture
+r_TexturesSkipLowerMips=0# 🔵 def 0
+r_TexturesStreaming=1# 🔵 def 1
+r_TexturesStreamingResidencyEnabled=1# 🔵 def 1
+r_TexturesStreamingSkipMips=0# 🔵 def 0
+r_TexturesStreampoolDefragmentation=2# 🔵 def 2
+
+# 🔴 edited graphics
+e_CoverageBufferTerrainExpand=1# 🔵 wh def 0.025 🔴
+e_Fog=1# 🔵 def 1 🔴
+e_LodFaceAreaTargetSize=0.0006# 🔵 def 0.001 🔴
+e_LodRatio=70# 🔵 wh def 60 🔴 max slider 70
+e_MergedMeshesInstanceDist=32# 🔵 wh def 16 🔴
+e_MergedMeshesLodRatio=16# 🔵 wh def 8 🔴
+e_MergedMeshesViewDistRatio=100# 🔵 wh 85 🔴 max slider 100
+e_ParticlesMotionBlur=0# 🔵 def 1 🔴
+e_ParticlesPoolSize=16384# 🔵 def 16384 🔴
+e_PhysProxyTriLimit=1000# 🔵 wh def 10000 🔴
+e_ShadowsMaxTexRes=1872# 🔵 wh def 1024 🔴
+e_svoTI_SSAOAmount=1.5# 🔵 def 1 🔴
+e_ViewDistRatio=150# 🔵 wh def 125 🔴 max slider 150
+e_VolumetricFog=0# 🔵 def 0 🔴
+e_WaterOceanFFT=0# 🔵 def 1 🔴
+es_MaxPhysDist=100# 🔵 wh def 200 🔴
+es_maxphysdistcloth=100# 🔵 wh def 300 🔴
+p_num_bodies_large_group=10# 🔵 wh def 100 🔴
+r_AntialiasingMode=3# 🔵 wh def 2 🔴
+r_AntialiasingTAASharpening=0# 🔵 def 0.2 🔴
+r_HDRVignetting=0# 🔵 def 1 🔴
+r_MotionBlur=0# 🔵 def 2 🔴
+r_MotionBlurQuality=0# 🔵 def 2 🔴
+r_RainAmount=2# 🔵 def 1 🔴
+r_RainDistMultiplier=2.5# 🔵 wh def 2 🔴
+r_RainMaxViewDist_Deferred=170# 🔵 def 150 🔴
+r_ssdoAmountAmbient=2# 🔵 def 1 🔴
+r_ssdoAmountDirect=4# 🔵 def 1.5 🔴
+r_ssdoAmountReflection=5# 🔵 def 4 🔴
+r_ssdoRadiusMin=0.02# 🔵 def 0.1 🔴
+r_SSReflections=0# 🔵 def 1 🔴
+r_SSReflHalfRes=1# 🔵 def 0 🔴
+r_TerrainAO=0# 🔵 def 7 🔴
+r_VolumetricFogTexDepth=4# 🔵 def 32 🔴
+r_VolumetricFogTexScale=20# 🔵 def 1 🔵 wh def 10 🔴
+r_WaterVolumeCaustics=0# 🔵 def 1 🔴
+WH_AI_LOD_DistanceMax=160# 🔴 90,110,130
+WH_AI_LOD_DistanceMin=130# 🔴 60,80,100
+wh_cc_LodForItemStreamOutBase=15# 🔵 def 20 🔴
+wh_env_RainDiffuseDarkening=0.25# 🔵 wh def 0.2 🔴
+wh_env_RainDropsSpeedBase=3# 🔵 wh def 1.5 🔴
+
+# 🔵 def graphics
+ca_AttachmentCullingRation=425# 🔵 wh def 425
+e_Brushes=1# 🔵 def 1
+e_Clouds=1# 🔵 def 1
+e_CoverageBufferEarlyOut=1# 🔵 def 1
+e_DynamicLights=1# 🔵 def 1
+e_GI=0# 🔵 wh def 0
+e_GIAmount=0.6# 🔵 def 0.6
+e_GICache=7# 🔵 def 7
+e_GIIterations=6# 🔵 def 6
+e_GIMaxDistance=100# 🔵 def 100
+e_GINumCascades=1# 🔵 def 1
+e_LightVolumes=1# 🔵 def 1
+e_MergedMeshesPool=16384# 🔵 wh def 16384
+e_ObjFastRegister=1# 🔵 def 1
+e_ParticlesCullAgainstOcclusionBuffer=1# 🔵 def 1
+e_ParticlesGI=1# 🔵 def 1
+e_ParticlesObjectCollisions=2# 🔵 def 2
+e_ParticlesQuality=4# 🔵 def 4
+e_ParticlesShadows=1# 🔵 def 1
+e_ParticlesSortQuality=0# 🔵 def 0 
+e_ShadowsCastViewDistRatio=1.6# 🔵 wh def 1.6
+e_ShadowsCastViewDistRatioLights=0.8# 🔵 wh def 0.8
+e_ShadowsCastViewDistRatioMulInvis=0.6# 🔵 wh def 0.6
+e_SkyQuality=1# 🔵 def 1
+e_SkyUpdateRate=1# 🔵 def 1
+e_StatObjMerge=1# 🔵 def 1
+e_TerrainAo=0# 🔵 def 0
+e_Tessellation=1# 🔵 def 1
+e_TessellationMaxDistance=30# 🔵 def 30
+e_Wind=1# 🔵 def 1
+es_MaxPhysDistInvisible=25# 🔵 wh def 25
+g_radialBlur=0# 🔵 def 1
+i_particleeffects=1# 🔵 def 1
+r_AntialiasingTAAPattern=1# 🔵 def 1
+r_ChromaticAberration=0# 🔵 def 0
+r_DepthOfField=2# 🔵 def 2
+r_FlareHqShafts=1# 🔵 def 1
+r_Flares=0# 🔵 wh def 0
+r_FlaresTessellationRatio=1# 🔵 def 1
+r_FogShadows=0# 🔵 def 0
+r_FogShadowsMode=0# 🔵 def 0
+r_FogShadowsWater=0# 🔵 def 1
+r_HDRBloom=1# 🔵 def 1
+r_HDRGrainAmount=0# 🔵 def 0
+r_ParticlesHalfRes=0# 🔵 def 0
+r_ParticlesTessellation=1# 🔵 def 1
+r_RainDropsEffect=1# 🔵 def 1
+r_Refraction=1# 🔵 def 1
+r_Sharpening=0# 🔵 def 0
+r_SilhouettePOM=0# 🔵 def 0
+r_ssdoRadius=0.3# 🔵 def 0.3
+r_TerrainAO_FadeDist=8# 🔵 def 8
+r_TessellationTriangleSize=8# 🔵 def 8
+r_Unlit=0# 🔵 wh def 0
+r_UseMaterialLayers=2# 🔵 def 2
+r_VolumetricFogSunLightCorrection=1# 🔵 def 1
+r_WaterCaustics=0# 🔵 def 0
+r_WaterGodRays=0# 🔵 def 0
+r_WaterReflectionsQuality=0# 🔵 def 0
+r_WaterTessellationHW=1# 🔵 def 1
+wh_cc_LodForAttachmentStreamOut=4# 🔵 def 6
+wh_env_RainDropsAmountMul=15# 🔵 wh def 15
+wh_env_RainLayers=3# 🔵 wh def 3
+wh_pl_FOWEnabled=1# 🔵 wh def 1
+wh_pl_FOWVisibilityRadius=100# 🔵 wh def 100
 ```
 
 ---
