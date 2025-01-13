@@ -1,4 +1,4 @@
-## updated 1/12/2025 for KCD v1.9.6 :ramen:
+## updated 1/12/2025x2 for KCD v1.9.6 :ramen: 
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -60,8 +60,8 @@ Bind 0 g_showHUD 0#
 Bind 9 g_showHUD 1#
 Bind f1 sys_MaxFPS 158#
 Bind f2 sys_MaxFPS 60#
-Bind f3 exec TEST1.cfg#
-Bind f4 exec TEST2.cfg#
+Bind f3 "exec TEST1.cfg"#
+Bind f4 "exec TEST2.cfg"#
 
 #
 cl_fov=68# 🔵 def 60
@@ -79,10 +79,11 @@ wh_horse_CameraCentering=0# 🔵 def 0.2
 wh_pl_showfirecursor=1# 🔵 def 0
 
 # 🔴 edited sys
-sys_budget_sysmem=1024# 🔵 def 512 🔴 RAM
-sys_budget_videomem=4096# 🔵 def 90 🔴 VRAM
+sys_budget_sysmem=2048# 🔵 def 512 🔴 RAM
+sys_budget_videomem=8192# 🔵 def 90 🔴 VRAM
 sys_flash_check_filemodtime=1# 🔵 wh def 0 🔴
-sys_PakStreamCache=1# 🔵 def 0 🔴 RAM
+sys_PakStreamCache=0# 🔵 def 0 🔴 RAM
+sys_streaming_CPU_worker=7# 🔵 def 5 🔴
 
 # 🔵 def sys
 sys_budget_soundCPU=15# 🔵 def 15
@@ -97,19 +98,17 @@ sys_limit_phys_thread_count=0# 🔵 def 0
 sys_physics_CPU=0# 🔵def 0
 sys_spec_Quality=4# 🔵 def 4
 sys_streaming_CPU=1# 🔵 def 1
-sys_streaming_CPU_worker=5# 🔵 def 5
 
 # 🔴 edited engine
-e_ParticlesThread=2# 🔵 def 1 🔴
-e_ShadowsPoolSize=4096# 🔵 def 4096 🔴 VRAM
 e_StreamCgfPoolSize=1024# 🔵 wh def 512 🔴 RAM
-p_num_threads=6# 🔵 def 2 🔴
+p_num_threads=7# 🔵 def 2 🔴
 r_MultiGPU=0# 🔵 def 1 🔴
 r_RenderTargetPoolSize=512# 🔵 def 0 🔴
-r_ShadersAsyncMaxThreads=4# 🔵 def 1 🔴
 
 # 🔵 def engine
 e_HwOcclusionCullingWater=1# 🔵 def 1
+e_ParticlesThread=1# 🔵 def 1
+e_ShadowsPoolSize=4096# 🔵 def 4096
 gpu_Particle_Physics=1# 🔵 def 1
 p_cull_distance=100# 🔵 wh def 100
 r_MergeRenderChunks=1# 🔵 def 1
@@ -120,8 +119,8 @@ r_WaterUpdateThread=5# 🔵 def 5
 r_TexPreallocateAtlases=1# 🔵 wh def 0 🔴
 r_TexturesStreamingMaxRequestedMB=512# 🔵 wh def 20 🔴
 r_TexturesStreamingResidencyThrottle=1# 🔵 def 0.5 🔴
-r_TexturesStreamingResidencyTime=120# 🔵 wh def 10 🔴
-r_TexturesStreamPoolSize=8192# 🔵 wh def 4096 🔴 VRAM
+r_TexturesStreamingResidencyTime=256# 🔵 wh def 10 🔴
+r_TexturesStreamPoolSize=10240# 🔵 wh def 4096 🔴 VRAM
 
 # 🔵 def texture
 r_TexturesSkipLowerMips=0# 🔵 def 0
@@ -139,7 +138,6 @@ e_MergedMeshesInstanceDist=32# 🔵 wh def 16 🔴
 e_MergedMeshesLodRatio=16# 🔵 wh def 8 🔴
 e_MergedMeshesViewDistRatio=100# 🔵 wh 85 🔴 max slider 100
 e_ParticlesMotionBlur=0# 🔵 def 1 🔴
-e_ParticlesPoolSize=16384# 🔵 def 16384 🔴
 e_PhysProxyTriLimit=1000# 🔵 wh def 10000 🔴
 e_ShadowsMaxTexRes=1872# 🔵 wh def 1024 🔴
 e_svoTI_SSAOAmount=1.5# 🔵 def 1 🔴
@@ -169,7 +167,6 @@ r_VolumetricFogTexScale=20# 🔵 def 1 🔵 wh def 10 🔴
 r_WaterVolumeCaustics=0# 🔵 def 1 🔴
 WH_AI_LOD_DistanceMax=160# 🔴 90,110,130
 WH_AI_LOD_DistanceMin=130# 🔴 60,80,100
-wh_cc_LodForItemStreamOutBase=15# 🔵 def 20 🔴
 wh_env_RainDiffuseDarkening=0.25# 🔵 wh def 0.2 🔴
 wh_env_RainDropsSpeedBase=3# 🔵 wh def 1.5 🔴
 
@@ -191,6 +188,7 @@ e_ObjFastRegister=1# 🔵 def 1
 e_ParticlesCullAgainstOcclusionBuffer=1# 🔵 def 1
 e_ParticlesGI=1# 🔵 def 1
 e_ParticlesObjectCollisions=2# 🔵 def 2
+e_ParticlesPoolSize=16384# 🔵 def 16384
 e_ParticlesQuality=4# 🔵 def 4
 e_ParticlesShadows=1# 🔵 def 1
 e_ParticlesSortQuality=0# 🔵 def 0 
@@ -234,7 +232,8 @@ r_WaterCaustics=0# 🔵 def 0
 r_WaterGodRays=0# 🔵 def 0
 r_WaterReflectionsQuality=0# 🔵 def 0
 r_WaterTessellationHW=1# 🔵 def 1
-wh_cc_LodForAttachmentStreamOut=4# 🔵 def 6
+wh_cc_LodForAttachmentStreamOut=6# 🔵 def 6
+wh_cc_LodForItemStreamOutBase=20# 🔵 def 20
 wh_env_RainDropsAmountMul=15# 🔵 wh def 15
 wh_env_RainLayers=3# 🔵 wh def 3
 wh_pl_FOWEnabled=1# 🔵 wh def 1
