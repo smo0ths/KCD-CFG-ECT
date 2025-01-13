@@ -143,9 +143,9 @@ r_TexturesStreamingSkipMips=0# 🔵 def 0
 # 🔴 edited graphics
 #e_VegetationMinSize=0# 🔵 def 0.1 🔴 pickable vegetation
 #r_DynTexAtlasSpritesMaxSize=32# 🔵 def 32 🔴 not real
-#r_HDRBrightLevel=1# 🔵 def 1  🔴 not real
+#r_HDRBrightLevel=1# 🔵 def 1 🔴 not real
 #r_SilhouettePOM=0# 🔵 def 0 🔴
-#s_ObstructionMaxValue=0# 🔵 def 0  🔴 not real
+#s_ObstructionMaxValue=0# 🔵 def 0 🔴 not real
 e_CoverageBufferTerrainExpand=1# 🔵 wh def 0.025 🔴
 e_Fog=1# 🔵 def 1 🔴
 e_LodFaceAreaTargetSize=0.0006# 🔵 def 0.001 🔴
