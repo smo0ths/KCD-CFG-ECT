@@ -1,4 +1,4 @@
-## updated 1/14/2025 v0.9.1 :ramen:
+## updated 1/15/2025 v0.9.1a :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -94,7 +94,6 @@ e_svoTI_Saturation=1 ## 0.8 ""
 e_svoTI_SkyColorMultiplier=-0.6 ## -1.0001 ""
 e_svoTI_SSAOAmount=1.5 ## 1 ""
 e_svoTI_VoxelizeUnderTerrain=0 ## 1 ""
-e_svoVoxelPoolResolution=128 ## 128
 e_TerrainDetailMaterialsViewDistZ=120 ## 100 ""
 e_ViewDistMin=10 ## 5 ""
 e_ViewDistRatio=150 ## 125 "150 max slider"
@@ -106,6 +105,7 @@ p_num_bodies_large_group=10 ## 100 ""
 p_num_threads=7 ## 2 ""
 r_AntialiasingMode=3 ## 2 ""
 r_AntialiasingTAASharpening=0 ## 0.2 ""
+r_DepthOfField=0 ## 2 ""
 r_DrawNearZRange=0.1 ## 0.001 ""
 r_FogShadowsWater=1 ## 1 ""
 r_HDRVignetting=0 ## 1 ""
@@ -132,6 +132,7 @@ r_TexturesStreampoolDefragmentation=2 ## 2 "1,2 CPU,GPU"
 r_TexturesStreampoolDefragmentationMaxAmount=3145728 ## 2097152 "testing"
 r_TexturesStreampoolDefragmentationMaxMoves=15 ## 10 "testing"
 r_TexturesStreamPoolSize=11264 ## 4096 "set to 70% of VRAM and round down"
+r_UseMergedPosts=0 ## 1 ""
 r_VolumetricFogTexDepth=4 ## 32 ""
 r_VolumetricFogTexScale=20 ## 10 ""
 r_WaterVolumeCaustics=0 ## 1 ""
@@ -172,7 +173,6 @@ e_DecalsOverlapping=1 ## 1
 e_DecalsPlacementTestAreaSize=0.08 ## 0.08
 e_DecalsRange=20 ## 20
 e_DeformableObjects=1 ## 1
-e_Dissolve=2 ##
 e_Dissolve=2 ## 2
 e_DissolveDistband=3 ##
 e_DissolveDistMax=8 ##
@@ -260,8 +260,10 @@ e_svoTI_EmissiveMultiplier=4 ## 4
 e_svoTI_RsmConeMaxLength=12 ## 12
 e_svoTI_SkipNonGILights=0 ## 0
 e_svoTI_SpecularAmplifier=1 ## 1
+e_svoVoxelPoolResolution=128 ## 128
 e_svoVoxGenRes=512 ## 512
 e_TerrainAo=0 ## 0
+e_TerrainDetailMaterialsViewDistXY=2048 ## 2048
 e_TerrainLodRatio=0.2 ## 0.2
 e_TerrainTextureLodRatio=1 ## 1
 e_Tessellation=1 ## 1
@@ -323,7 +325,6 @@ r_DeferredShadingFilterGBuffer=0 ## 0
 r_DeferredShadingSSS=1 ## 1
 r_DeferredShadingTiled=2 ## 2
 r_DeferredShadingTiledHairQuality=1 ## 1
-r_DepthOfField=2 ## 2
 r_DepthOfFieldDilation=0 ## 0
 r_DetailDistance=8 ## 8
 r_DrawNearShadows=1 ## 1
@@ -397,7 +398,6 @@ r_TranspDepthFixup=1 ## 1
 r_Unlit=0 ## 0
 r_UseHWSkinning=1 ## 1
 r_UseMaterialLayers=2 ## 2
-r_UseMergedPosts=1 ## 1
 r_UseZPass=2 ## 2
 r_VolumetricFogSunLightCorrection=1 ## 1
 r_WaterCaustics=0 ## 0
