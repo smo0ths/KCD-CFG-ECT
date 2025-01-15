@@ -1,4 +1,4 @@
-## updated 1/14/2025 v0.9.0 :ramen:
+## updated 1/14/2025 v0.9.1 :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
