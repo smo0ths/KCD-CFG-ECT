@@ -1,4 +1,4 @@
-## updated 1/16/2025 v0.9.2 :ramen:
+## updated 1/16/2025 v0.9.2a :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -136,7 +136,7 @@ R_Texturesstreampooldefragmentationmaxamount=3145728 ## 2097152 "Vram,Testing"
 R_Texturesstreampooldefragmentationmaxmoves=15 ## 10 "Testing"
 R_Texturesstreampoolsize=11264 ## 4096 "Set To 70% Of Vram And Round Down"
 R_Usemergedposts=0 ## 1 ""
-R_Volumetricfogtexdepth=4 ## 32 ""
+R_Volumetricfogtexdepth=16 ## 32 ""
 R_Volumetricfogtexscale=20 ## 10 ""
 R_Watervolumecaustics=0 ## 1 ""
 S_Occlusionmaxdistance=150 ## 500 ""
@@ -300,6 +300,7 @@ E_Watertessellationamountx=85 ## 85
 E_Watertessellationamounty=85 ## 85
 E_Watertessellationswathwidth=10 ## 10
 E_Watervolumes=1 ## 1
+E_Waterwaves=0 ## 0
 E_Waterwavestessellationamount=5 ## 5
 E_Wind=1 ## 1
 Es_Debrislifetimescale=1 ## 1
@@ -425,6 +426,13 @@ R_Useesram=1 ## 1
 R_Usehwskinning=1 ## 1
 R_Usemateriallayers=2 ## 2
 R_Usezpass=2 ## 2
+R_Volumetricfogdownscaledsunshadow=1 ## 1
+R_Volumetricfogdownscaledsunshadowratio=1 ## 1
+R_Volumetricfogminimumlightbulbsize=0.4 ## 0.4
+R_Volumetricfogreprojectionblendfactor=0.9 ## 0.9
+R_Volumetricfogreprojectionmode=1 ## 1
+R_Volumetricfogsample=0 ## 0
+R_Volumetricfogshadow=1 ## 1
 R_Volumetricfogsunlightcorrection=1 ## 1
 R_Watercaustics=0 ## 0
 R_Watergodrays=0 ## 0
