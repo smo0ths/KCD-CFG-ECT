@@ -1,4 +1,4 @@
-## updated 1/15/2025 v0.9.1a :ramen:
+## updated 1/15/2025 v0.9.1b :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -116,11 +116,11 @@ r_RainAmount=2 ## 1 ""
 r_RainDistMultiplier=2.5 ## 2 ""
 r_RainMaxViewDist_Deferred=170 ## 150 ""
 r_RenderTargetPoolSize=512 ## 0 ""
-r_ssdoAmountAmbient=1.5 ## 1 ""
-r_ssdoAmountDirect=4 ## 1.5 ""
+r_ssdoAmountAmbient=2 ## 1 ""
+r_ssdoAmountDirect=1.5 ## 1.5 ""
 r_ssdoAmountReflection=5 ## 4 ""
 r_ssdoHalfRes=0 ## 2 ""
-r_ssdoRadiusMin=0.02 ## 0.1 ""
+r_ssdoRadiusMin=0.03 ## 0.1 ""
 r_SSReflections=0 ## 1 ""
 r_SSReflHalfRes=1 ## 0 ""
 r_TerrainAO=0 ## 7 ""
