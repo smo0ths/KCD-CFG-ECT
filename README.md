@@ -58,10 +58,10 @@ Q_Shaderwater=3 ## 2 ""
 
 Bind 0 G_Showhud 0 ##
 Bind 9 G_Showhud 1 ##
-Bind F1 Sys_Maxfps 158 ##
-Bind F2 Sys_Maxfps 60 ##
-Bind F3 "Exec Test1.Cfg" ## "Make"
-Bind F4 "Exec Test2.Cfg" ## "Make"
+Bind f1 Sys_Maxfps 158 ##
+Bind f2 Sys_Maxfps 60 ##
+Bind f3 "Exec Test1.cfg" ## "Make"
+Bind f4 "Exec Test2.cfg" ## "Make"
 
 Cl_Fov=68 ## 60
 Cl_Sensitivity=10 ##
@@ -118,7 +118,7 @@ R_Multigpu=0 ## 1 ""
 R_Rainamount=2 ## 1 ""
 R_Raindistmultiplier=2.5 ## 2 ""
 R_Rainmaxviewdist_Deferred=170 ## 150 ""
-R_Rendertargetpoolsize=512 ## 0 ""
+R_Rendertargetpoolsize=512 ## 0 "Vram"
 R_Ssdoamountambient=2 ## 1 ""
 R_Ssdoamountreflection=5 ## 4 ""
 R_Ssdohalfres=0 ## 2 ""
@@ -132,7 +132,7 @@ R_Texturesstreamingmaxrequestedmb=500 ## 20 ""
 R_Texturesstreamingresidencythrottle=0.8 ## 0.5 ""
 R_Texturesstreamingresidencytime=60 ## 10 ""
 R_Texturesstreampooldefragmentation=2 ## 2 "1,2 Cpu,Gpu"
-R_Texturesstreampooldefragmentationmaxamount=3145728 ## 2097152 "Testing"
+R_Texturesstreampooldefragmentationmaxamount=3145728 ## 2097152 "Vram,Testing"
 R_Texturesstreampooldefragmentationmaxmoves=15 ## 10 "Testing"
 R_Texturesstreampoolsize=11264 ## 4096 "Set To 70% Of Vram And Round Down"
 R_Usemergedposts=0 ## 1 ""
@@ -148,7 +148,7 @@ Sys_Flash_Check_Filemodtime=1 ## 0 ""
 Sys_Flash_Static_Pool_Size=1024 ## 0 "Ram,Testing"
 Sys_Pakstreamcache=1 ## 0 "Ram,Testing"
 Sys_Streaming_Cpu_Worker=7 ## 5 ""
-Sys_Streaming_Max_Bandwidth=1024 ## 0 "Testing"
+Sys_Streaming_Max_Bandwidth=1024 ## 0 "Vram,Testing"
 Wh_Ai_Lod_Distancemax=160 ## "90,110,130"
 Wh_Ai_Lod_Distancemin=130 ## "60,80,100"
 Wh_Env_Raindiffusedarkening=0.3 ## 0.2 ""
