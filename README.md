@@ -1,4 +1,4 @@
-## updated 1/16/2025 v0.9.2a :ramen:
+## updated 1/16/2025 v0.9.2b :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -88,7 +88,6 @@ E_Mergedmesheslodratio=16 ## 8 ""
 E_Mergedmeshesviewdistratio=100 ## 85 "100 Max Slider"
 E_Particlesmotionblur=0 ## 1 ""
 E_Physproxytrilimit=1000 ## 10000 ""
-E_Shadowsadaptscale=1 ## 2.72 ""
 E_Shadowscastviewdistratio=1.3 ## 1.6 ""
 E_Shadowsmaxtexres=1872 ## 1024 ""
 E_Shadowsslopebias=0.00008 ## 1 ""
@@ -191,6 +190,7 @@ E_Dynamiclights=1 ## 1
 E_Dynamiclightsmaxentitylights=16 ## 16
 E_Fog=1 ## 1
 E_Fogvolumes=1 ## 1
+E_Fogvolumestiledinjection=1 ## 1
 E_Foliagewindactivationdist=25 ## 25
 E_Geomcaches=1 ## 1
 E_Gi=0 ## 0
@@ -238,6 +238,7 @@ E_Preloaddecals=1 ## 1
 E_Preloadmaterials=1 ## 1
 E_Procvegetation=0 ## 0
 E_Shadows=1 ## 1
+E_Shadowsadaptscale=2.72 ## 2.72
 E_Shadowsblendcascades=2 ## 2
 E_Shadowscacheobjectlod=0 ## 0
 E_Shadowscacherendercharacters=0 ## 0
@@ -454,9 +455,9 @@ Sys_Flash_Newstencilclear=1 ## 1
 Sys_Flash_Use_Arenas=1 ## 1
 Sys_Job_System_Enable=1 ## 1
 Sys_Limit_Phys_Thread_Count=0 ## 0
-Sys_Physics_Cpu=0 ## 0
+Sys_Physics_Cpu=1 ## 0
 Sys_Preload=0 ## 0
-Sys_Streaming_Cpu=1 ## 1
+Sys_Streaming_Cpu=2 ## 1
 T_Smoothing=1 ## 1
 V_Vehicle_Quality=4 ## 4
 Wh_Cc_Characterdetailreduction=0 ## 0
@@ -478,6 +479,8 @@ Wh_Item_Viewdistratio=100 ## 100
 Wh_Pl_Fowenabled=1 ## 1
 Wh_Pl_Fowvisibilityradius=100 ## 100
 Wh_Player_Deepwaterlevel=0.85 ## 0.85
+
+R_Reloadshaders=1 ## 0 ""
 
 R_Reloadshaders=1 ## 0 ""
 ```
