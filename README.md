@@ -13,9 +13,9 @@
 ---
 
 ```python
-## Create user.cfg in KingdomComeDeliverance folder and copy paste
-## delete cache folder %userprofile%/Saved Games/kingdomcome/shaders
-## Add launch commands: +exec user.cfg -devmode
+## create user.cfg in kingdomcomedeliverance folder and copy paste
+## delete cache folder %userprofile%/saved games/kingdomcome/shaders
+## add launch commands: +exec user.cfg -devmode
 ## and restart after getting to main menu
 ## "" means changed ## means sudo default max spec this is a ultra high config
 
@@ -145,8 +145,8 @@ Sys_Budget_Sysmem=1024 ## 512 "Debug"
 Sys_Budget_Videomem=1024 ## 90 "Debug"
 Sys_Flash_Address_Space=131072 ## 65536 ""
 Sys_Flash_Check_Filemodtime=1 ## 0 ""
-Sys_Flash_Static_Pool_Size=1024 ## 0 "Ram,testing"
-Sys_Pakstreamcache=1 ## 0 "Ram,testing"
+Sys_Flash_Static_Pool_Size=1024 ## 0 "Ram,Testing"
+Sys_Pakstreamcache=1 ## 0 "Ram,Testing"
 Sys_Streaming_Cpu_Worker=7 ## 5 ""
 Sys_Streaming_Max_Bandwidth=1024 ## 0 "Testing"
 Wh_Ai_Lod_Distancemax=160 ## "90,110,130"
@@ -390,7 +390,7 @@ R_Shadowcastinglightsmaxcount=28 ## 28
 R_Shadowjittering=2.5 ## 2.5
 R_Shadowpoolmaxframes=5 ## 5
 R_Shadowpoolmaxtimeslicedupdatesperframe=120 ## 120
-r_ShadowsBias=0.00008 ## 8e-05,0.00008
+R_Shadowsbias=0.00008 ## 8E-05,0.00008
 R_Shadowscache=0 ## 0
 R_Shadowscacheresolutions=6324,4214,2810,1872,624 ## 6324,4214,2810,1872,624
 R_Shadowspcfiltering=1 ## 1
