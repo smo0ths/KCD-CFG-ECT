@@ -481,8 +481,6 @@ Wh_Pl_Fowvisibilityradius=100 ## 100
 Wh_Player_Deepwaterlevel=0.85 ## 0.85
 
 R_Reloadshaders=1 ## 0 ""
-
-R_Reloadshaders=1 ## 0 ""
 ```
 
 ---
