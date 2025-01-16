@@ -1,4 +1,4 @@
-## updated 1/16/2025 v0.9.2b :ramen:
+## updated 1/16/2025 v0.9.2c :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -455,9 +455,9 @@ Sys_Flash_Newstencilclear=1 ## 1
 Sys_Flash_Use_Arenas=1 ## 1
 Sys_Job_System_Enable=1 ## 1
 Sys_Limit_Phys_Thread_Count=0 ## 0
-Sys_Physics_Cpu=1 ## 0
+Sys_Physics_Cpu=0 ## 0
 Sys_Preload=0 ## 0
-Sys_Streaming_Cpu=2 ## 1
+Sys_Streaming_Cpu=1 ## 1
 T_Smoothing=1 ## 1
 V_Vehicle_Quality=4 ## 4
 Wh_Cc_Characterdetailreduction=0 ## 0
