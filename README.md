@@ -26,7 +26,7 @@ Sys_Maxfps=158 ## 0 ""
 ##
 Q_Quality=3 ## ""
 Sys_Spec_Full=7 ## ""
-Sys_Spec_Quality=4 ## 3 ""
+Sys_Spec_Quality=4 ## 4 ""
 
 ##
 Sys_Spec=0 ## "Custom"
