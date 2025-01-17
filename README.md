@@ -1,4 +1,4 @@
-## updated 1/17/2025 v0.9.3 :ramen:
+## updated 1/17/2025a v0.9.3 :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -26,7 +26,7 @@ Sys_Maxfps=158 ## 0 ""
 ##
 Q_Quality=3 ## ""
 Sys_Spec_Full=7 ## ""
-Sys_Spec_Quality=4 ## 4 ""
+Sys_Spec_Quality=4 ## 3 ""
 
 ##
 Sys_Spec=0 ## "Custom"
@@ -98,6 +98,20 @@ Sys_Pakstreamcache=1 ## 0 "Ram,Test"
 Sys_Streaming_Max_Bandwidth=2000 ## 0 "Vram,Test"
 
 ##
+R_Antialiasingmode=3 ## 2 ""
+R_Antialiasingtaapattern=3 ## 1 ""
+R_Antialiasingtaasharpening=0 ## 0.2 ""
+
+##
+E_Svoti_Lowspecmode=4 ## 1 ""
+E_Svoti_Skycolormultiplier=-0.2 ## -1.0001 "Overall Lighting"
+E_Svoti_Ssaoamount=1.5 ## 1 ""
+R_Ssdoamountambient=2 ## 1 ""
+R_Ssdoamountreflection=5 ## 4 ""
+R_Ssdohalfres=3 ## 2 ""
+R_Ssdoradiusmin=0.04 ## 0.1 ""
+
+##
 ## E_Vegetationminsize=0 ## 0.1 "Pickable Vegetation"
 ## R_Dyntexatlasspritesmaxsize=32 ## 32 "Not Real"
 ## R_Hdrbrightlevel=1 ## 1 "Not Real"
@@ -113,9 +127,6 @@ E_Particlesmotionblur=0 ## 1 ""
 E_Physproxytrilimit=1000 ## 10000 ""
 E_Shadowscastviewdistratio=1.3 ## 1.6 ""
 E_Shadowsmaxtexres=1872 ## 1024 ""
-E_Svoti_Lowspecmode=4 ## 1 ""
-E_Svoti_Skycolormultiplier=-0.2 ## -1.0001 "Overall Lighting"
-E_Svoti_Ssaoamount=1.5 ## 1 ""
 E_Svoti_Voxelizeunderterrain=0 ## 1 ""
 E_Terraindetailmaterialsviewdistz=120 ## 100 ""
 E_Viewdistmin=10 ## 5 ""
@@ -128,9 +139,6 @@ Log_Enableremoteconsole=0 ## 1 ""
 Log_Writetofileverbosity=0 ## 1 ""
 P_Num_Bodies_Large_Group=10 ## 100 ""
 P_Num_Threads=7 ## 2 ""
-R_Antialiasingmode=3 ## 2 ""
-R_Antialiasingtaapattern=3 ## 1 ""
-R_Antialiasingtaasharpening=0 ## 0.2 ""
 R_Depthoffield=0 ## 2 ""
 R_Drawnearzrange=0.1 ## 0.001 ""
 R_Hdrvignetting=0 ## 1 ""
@@ -140,15 +148,10 @@ R_Multigpu=0 ## 1 ""
 R_Rainamount=2 ## 1 ""
 R_Raindistmultiplier=2.5 ## 2 ""
 R_Rainmaxviewdist_Deferred=170 ## 150 ""
-R_Ssdoamountambient=2 ## 1 ""
-R_Ssdoamountreflection=5 ## 4 ""
-R_Ssdohalfres=3 ## 2 ""
-R_Ssdoradiusmin=0.04 ## 0.1 ""
 R_Ssreflections=0 ## 1 ""
 R_Ssreflhalfres=1 ## 0 ""
 R_Supersampling=0 ## 1 ""
 R_Terrainao=0 ## 7 ""
-R_Texpreallocateatlases=1 ## 0 ""
 R_Texturesstreamingresidencythrottle=0.8 ## 0.5 ""
 R_Texturesstreamingresidencytime=60 ## 10 ""
 R_Texturesstreampooldefragmentation=2 ## 2 ""
@@ -428,6 +431,7 @@ R_Texatlassize=2048 ## 2048
 R_Texmaxanisotropy=16 ## 16
 R_Texminanisotropy=16 ## 16
 R_Texnoanisoalphatest=0 ## 0
+R_Texpreallocateatlases=0 ## 0
 R_Textureloddistanceratio=-1 ## -1
 R_Texturesskiplowermips=0 ## 0
 R_Texturesstreaming=1 ## 1
