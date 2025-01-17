@@ -1,4 +1,4 @@
-## updated 1/16/2025 v0.9.2c :ramen:
+## updated 1/16/2025 v0.9.2d :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -23,7 +23,7 @@ Con_Restricted=0 ##
 R_Displayinfo=0 ##
 Sys_Maxfps=158 ## 0 ""
 
-## Sys_Spec_Full=4 ## "Change Per,Custom"
+## Sys_Spec_Full=7 ## "Change Per,Custom"
 ## Sys_Spec_Quality=4 ## 4 "Change Per"
 Sys_Spec=0 ## "Sets Custom Spec"
 Sys_Spec_Gameeffects=7 ##
@@ -107,7 +107,9 @@ Log_Writetofileverbosity=0 ## 1 ""
 P_Num_Bodies_Large_Group=10 ## 100 ""
 P_Num_Threads=7 ## 2 ""
 R_Antialiasingmode=3 ## 2 ""
+R_Antialiasingtaapattern=3 ## 1 ""
 R_Antialiasingtaasharpening=0 ## 0.2 ""
+r_ColorBits=24 ## 32 ""
 R_Depthoffield=0 ## 2 ""
 R_Drawnearzrange=0.1 ## 0.001 ""
 R_Hdrvignetting=0 ## 1 ""
@@ -330,7 +332,6 @@ P_Splash_Force0=10 ## 10
 P_Splash_Force1=100 ## 100
 P_Splash_Vel0=4.5 ## 4.5
 P_Splash_Vel1=10 ## 10
-R_Antialiasingtaapattern=1 ## 1
 R_Batching=1 ## 1
 R_Batchtype=1 ## 1
 R_Beams=1 ## 1
@@ -447,6 +448,10 @@ R_Watervolumecausticsdensity=256 ## 256
 R_Watervolumecausticsmaxdist=35 ## 35
 R_Watervolumecausticsres=1024 ## 1024
 R_Watervolumecausticssnapfactor=1 ## 1
+R_Zfightingdepthscale=0.995 ## 0.995
+R_Zfightingextrude=0.001 ## 0.001
+R_Zpassdepthsorting=1 ## 1
+R_Zprepassmaxdist=16 ## 16
 Sys_Budget_Soundcpu=15 ## 15
 Sys_Flash_Allow_Reset_Mesh_Cache=1 ## 1
 Sys_Flash_Curve_Tess_Error=2 ## 2
