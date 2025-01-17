@@ -640,7 +640,7 @@ HarmlessFallHeight, InjuringFallHeight and FatalFallHeight set to 9000
       <row rpg_param_key="HarmlessFallHeight" rpg_param_value="9000" />
       <row rpg_param_key="InjuringFallHeight" rpg_param_value="9000" />
       <row rpg_param_key="FatalFallHeight" rpg_param_value="9000" />
-      <row rpg_param_key="FullClothDirtyingOnFullSpeed" rpg_param_value="5000" />
+      <row rpg_param_key="FullClothDirtyingOnFullSpeed" rpg_param_value="15000" />
     </rows>
   </table>
 </database>
