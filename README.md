@@ -69,7 +69,7 @@ Bind f1 Sys_Maxfps 158 ##
 Bind f2 Sys_Maxfps 60 ##
 Bind f3 "exec Test1.cfg" ## "Make"
 Bind f4 "exec Test2.cfg" ## "Make"
-Bind f6 R_Reloadshaders 1 ## "Make"
+Bind f6 R_Reloadshaders 1 ##
 
 ##
 Cl_Sensitivity=10 ##
