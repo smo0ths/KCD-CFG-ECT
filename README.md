@@ -1,4 +1,4 @@
-## updated 1/16/2025 v0.9.2d :ramen:
+## updated 1/17/2025 v0.9.3 :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -19,13 +19,19 @@
 ## and restart after getting to main menu
 ## "" means changed ## means sudo default max spec this is a ultra high config
 
+##
 Con_Restricted=0 ##
-R_Displayinfo=0 ##
 Sys_Maxfps=158 ## 0 ""
 
-## Sys_Spec_Full=7 ## "Change Per,Custom"
-## Sys_Spec_Quality=4 ## 4 "Change Per"
-Sys_Spec=0 ## "Sets Custom Spec"
+##
+Q_Quality=3 ## ""
+Sys_Spec_Full=7 ## ""
+Sys_Spec_Quality=4 ## 4 ""
+
+##
+Sys_Spec=0 ## "Custom"
+
+##
 Sys_Spec_Gameeffects=7 ##
 Sys_Spec_Light=7 ##
 Sys_Spec_Objectdetail=7 ##
@@ -41,7 +47,7 @@ Sys_Spec_Vegetation=7 ##
 Sys_Spec_Volumetriceffects=7 ##
 Sys_Spec_Water=7 ##
 
-## Q_Quality=3 ## "Change Per"
+##
 Q_Renderer=3 ##
 Q_Shaderfx=3 ##
 Q_Shadergeneral=3 ##
@@ -56,25 +62,42 @@ Q_Shaderterrain=3 ##
 Q_Shadervegetation=3 ##
 Q_Shaderwater=3 ## 2 ""
 
+##
 Bind 0 G_Showhud 0 ##
 Bind 9 G_Showhud 1 ##
 Bind f1 Sys_Maxfps 158 ##
 Bind f2 Sys_Maxfps 60 ##
-Bind f3 "Exec Test1.cfg" ## "Make"
-Bind f4 "Exec Test2.cfg" ## "Make"
+Bind f3 "exec Test1.cfg" ## "Make"
+Bind f4 "exec Test2.cfg" ## "Make"
+Bind f6 R_Reloadshaders 1 ## "Make"
 
-Cl_Fov=68 ## 60
+##
 Cl_Sensitivity=10 ##
-G_Skipintro=1 ## 0
+G_Skipintro=1 ## 0 ""
 I_Mouse_Accel=0 ##
 I_Mouse_Smooth=0 ##
+R_Displayinfo=0 ##
+R_Vsync=0 ##
+
+##
+Cl_Fov=68 ## 60 ""
 Pl_Movement.Power_Sprint_Targetfov=68 ## 55 ""
 R_Drawnearfov=68 ## 60 ""
-R_Vsync=0 ##
-Wh_Cs_Playerlockdisabled=0 ## 0
-Wh_Horse_Cameracentering=0 ## 0.2 ""
-Wh_Pl_Showfirecursor=1 ## 0
 
+##
+E_Streamcgfpoolsize=1024 ## 512 "Ram,Test"
+R_Rendertargetpoolsize=1024 ## 0 "Vram,Test"
+R_Texturesstreamingmaxrequestedmb=1024 ## 20 "Vram,Test"
+R_Texturesstreampooldefragmentationmaxamount=3145728 ## 2097152 "Vram,Test"
+R_Texturesstreampooldefragmentationmaxmoves=15 ## 10 "Vram,Test"
+R_Texturesstreampoolsize=6144 ## 4096 "Vram,Test"
+Sys_Budget_Streamingthroughput=3000 ## 1024 "Ram,Test"
+Sys_Budget_Sysmem=0 ## 512 "Ram,Debug,Test"
+Sys_Budget_Videomem=0 ## 90 "Ram,Debug,Test"
+Sys_Pakstreamcache=1 ## 0 "Ram,Test"
+Sys_Streaming_Max_Bandwidth=2000 ## 0 "Vram,Test"
+
+##
 ## E_Vegetationminsize=0 ## 0.1 "Pickable Vegetation"
 ## R_Dyntexatlasspritesmaxsize=32 ## 32 "Not Real"
 ## R_Hdrbrightlevel=1 ## 1 "Not Real"
@@ -90,15 +113,14 @@ E_Particlesmotionblur=0 ## 1 ""
 E_Physproxytrilimit=1000 ## 10000 ""
 E_Shadowscastviewdistratio=1.3 ## 1.6 ""
 E_Shadowsmaxtexres=1872 ## 1024 ""
-E_Shadowsslopebias=0.00008 ## 1 ""
-E_Streamcgfpoolsize=1024 ## 512 "Ram"
-E_Svoti_Lowspecmode=2 ## 1 ""
-E_Svoti_Skycolormultiplier=-0.5 ## -1.0001 "-0.5,-0.1"
+E_Svoti_Lowspecmode=4 ## 1 ""
+E_Svoti_Skycolormultiplier=-0.2 ## -1.0001 "Overall Lighting"
 E_Svoti_Ssaoamount=1.5 ## 1 ""
 E_Svoti_Voxelizeunderterrain=0 ## 1 ""
 E_Terraindetailmaterialsviewdistz=120 ## 100 ""
 E_Viewdistmin=10 ## 5 ""
 E_Viewdistratio=150 ## 125 "150 Max Slider"
+E_Volumetricfog=0 ## 0 "Volumetric Fog"
 E_Wateroceanfft=0 ## 1 ""
 Es_Maxphysdist=100 ## 200 ""
 Es_Maxphysdistcloth=100 ## 300 ""
@@ -109,7 +131,6 @@ P_Num_Threads=7 ## 2 ""
 R_Antialiasingmode=3 ## 2 ""
 R_Antialiasingtaapattern=3 ## 1 ""
 R_Antialiasingtaasharpening=0 ## 0.2 ""
-r_ColorBits=24 ## 32 ""
 R_Depthoffield=0 ## 2 ""
 R_Drawnearzrange=0.1 ## 0.001 ""
 R_Hdrvignetting=0 ## 1 ""
@@ -119,42 +140,34 @@ R_Multigpu=0 ## 1 ""
 R_Rainamount=2 ## 1 ""
 R_Raindistmultiplier=2.5 ## 2 ""
 R_Rainmaxviewdist_Deferred=170 ## 150 ""
-R_Rendertargetpoolsize=512 ## 0 "Vram"
 R_Ssdoamountambient=2 ## 1 ""
 R_Ssdoamountreflection=5 ## 4 ""
-R_Ssdohalfres=0 ## 2 ""
-R_Ssdoradiusmin=0.03 ## 0.1 ""
+R_Ssdohalfres=3 ## 2 ""
+R_Ssdoradiusmin=0.04 ## 0.1 ""
 R_Ssreflections=0 ## 1 ""
 R_Ssreflhalfres=1 ## 0 ""
 R_Supersampling=0 ## 1 ""
 R_Terrainao=0 ## 7 ""
 R_Texpreallocateatlases=1 ## 0 ""
-R_Texturesstreamingmaxrequestedmb=500 ## 20 ""
 R_Texturesstreamingresidencythrottle=0.8 ## 0.5 ""
 R_Texturesstreamingresidencytime=60 ## 10 ""
-R_Texturesstreampooldefragmentation=2 ## 2 "1,2 Cpu,Gpu"
-R_Texturesstreampooldefragmentationmaxamount=3145728 ## 2097152 "Vram,Testing"
-R_Texturesstreampooldefragmentationmaxmoves=15 ## 10 "Testing"
-R_Texturesstreampoolsize=11264 ## 4096 "Set To 70% Of Vram And Round Down"
+R_Texturesstreampooldefragmentation=2 ## 2 ""
 R_Usemergedposts=0 ## 1 ""
 R_Volumetricfogtexdepth=16 ## 32 ""
 R_Volumetricfogtexscale=20 ## 10 ""
 R_Watervolumecaustics=0 ## 1 ""
 S_Occlusionmaxdistance=150 ## 500 ""
-Sys_Budget_Streamingthroughput=2048 ## 1024 "Testing"
-Sys_Budget_Sysmem=1024 ## 512 "Debug"
-Sys_Budget_Videomem=1024 ## 90 "Debug"
 Sys_Flash_Address_Space=131072 ## 65536 ""
 Sys_Flash_Check_Filemodtime=1 ## 0 ""
-Sys_Flash_Static_Pool_Size=1024 ## 0 "Ram,Testing"
-Sys_Pakstreamcache=1 ## 0 "Ram,Testing"
 Sys_Streaming_Cpu_Worker=7 ## 5 ""
-Sys_Streaming_Max_Bandwidth=1024 ## 0 "Vram,Testing"
 Wh_Ai_Lod_Distancemax=160 ## "90,110,130"
 Wh_Ai_Lod_Distancemin=130 ## "60,80,100"
 Wh_Env_Raindiffusedarkening=0.3 ## 0.2 ""
 Wh_Env_Raindropsspeedbase=3 ## 1.5 ""
+Wh_Horse_Cameracentering=0 ## 0.2 ""
+Wh_Pl_Showfirecursor=1 ## 0 ""
 
+##
 ## Wh_Sequence_Fmod_Event_Name=Event:/Music/Music ##
 ## Wh_Snd_Audio_Xmls_Dir=/Libs/Gameaudio/ ##
 Ca_Attachmentcullingration=450 ## 450
@@ -253,6 +266,7 @@ E_Shadowsonwater=0 ## 0
 E_Shadowsperobject=0 ## 0
 E_Shadowspoolsize=4096 ## 4096
 E_Shadowsresscale=4 ## 4
+E_Shadowsslopebias=1 ## 1
 E_Shadowsslopebiashq=0.25 ## 0.25
 E_Shadowstessellatecascades=1 ## 1
 E_Shadowstessellatedlights=0 ## 0
@@ -295,7 +309,6 @@ E_Viewdistratiocustom=150 ## 150
 E_Viewdistratiodetail=125 ## 125
 E_Viewdistratiolights=80 ## 80
 E_Viewdistratiovegetation=65 ## 65
-E_Volumetricfog=0 ## 0
 E_Waterocean=1 ## 1
 E_Wateroceanbottom=1 ## 1
 E_Watertessellationamount=10 ## 10
@@ -337,6 +350,7 @@ R_Batchtype=1 ## 1
 R_Beams=1 ## 1
 R_Chromaticaberration=0 ## 0
 R_Cloudsupdatealways=0 ## 0
+R_Colorbits=32 ## 32
 R_Colorgrading=2 ## 2
 R_Colorgradingchartscache=0 ## 0
 R_Conditionalrendering=0 ## 0
@@ -427,6 +441,7 @@ R_Usedisplacementfactor=0.2 ## 0.2
 R_Useesram=1 ## 1
 R_Usehwskinning=1 ## 1
 R_Usemateriallayers=2 ## 2
+R_Useshadowspool=1 ## 1
 R_Usezpass=2 ## 2
 R_Volumetricfogdownscaledsunshadow=1 ## 1
 R_Volumetricfogdownscaledsunshadowratio=1 ## 1
@@ -457,6 +472,7 @@ Sys_Flash_Allow_Reset_Mesh_Cache=1 ## 1
 Sys_Flash_Curve_Tess_Error=2 ## 2
 Sys_Flash_Edgeaa=1 ## 1
 Sys_Flash_Newstencilclear=1 ## 1
+Sys_Flash_Static_Pool_Size=0 ## 0
 Sys_Flash_Use_Arenas=1 ## 1
 Sys_Job_System_Enable=1 ## 1
 Sys_Limit_Phys_Thread_Count=0 ## 0
@@ -468,6 +484,7 @@ V_Vehicle_Quality=4 ## 4
 Wh_Cc_Characterdetailreduction=0 ## 0
 Wh_Cc_Lodforattachmentstreamout=6 ## 6
 Wh_Cc_Lodforitemstreamoutbase=20 ## 20
+Wh_Cs_Playerlockdisabled=0 ## 0
 Wh_Env_Dirtcreationspeed=0.05 ## 0.05
 Wh_Env_Dirtdryupspeed=0.05 ## 0.05
 Wh_Env_Puddlecreationdelay=1000 ## 1000
@@ -484,8 +501,6 @@ Wh_Item_Viewdistratio=100 ## 100
 Wh_Pl_Fowenabled=1 ## 1
 Wh_Pl_Fowvisibilityradius=100 ## 100
 Wh_Player_Deepwaterlevel=0.85 ## 0.85
-
-R_Reloadshaders=1 ## 0 ""
 ```
 
 ---
