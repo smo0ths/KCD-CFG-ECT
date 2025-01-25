@@ -1,4 +1,4 @@
-## updated 1/17/2025a v0.9.3 :ramen:
+## updated 1/25/2025 v0.9.4 :ramen:
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -99,17 +99,17 @@ Sys_Streaming_Max_Bandwidth=2000 ## 0 "Vram,Test"
 
 ##
 R_Antialiasingmode=3 ## 2 ""
-R_Antialiasingtaapattern=3 ## 1 ""
+R_Antialiasingtaapattern=1 ## 1 ""
 R_Antialiasingtaasharpening=0 ## 0.2 ""
 
 ##
 E_Svoti_Lowspecmode=4 ## 1 ""
 E_Svoti_Skycolormultiplier=-0.2 ## -1.0001 "Overall Lighting"
 E_Svoti_Ssaoamount=1.5 ## 1 ""
-R_Ssdoamountambient=2 ## 1 ""
+R_Ssdoamountambient=1.5 ## 1 ""
 R_Ssdoamountreflection=5 ## 4 ""
-R_Ssdohalfres=3 ## 2 ""
-R_Ssdoradiusmin=0.04 ## 0.1 ""
+R_Ssdohalfres=1 ## 2 ""
+R_Ssdoradiusmin=0.075 ## 0.1 ""
 
 ##
 ## E_Vegetationminsize=0 ## 0.1 "Pickable Vegetation"
@@ -159,7 +159,6 @@ R_Usemergedposts=0 ## 1 ""
 R_Volumetricfogtexdepth=16 ## 32 ""
 R_Volumetricfogtexscale=20 ## 10 ""
 R_Watervolumecaustics=0 ## 1 ""
-S_Occlusionmaxdistance=150 ## 500 ""
 Sys_Flash_Address_Space=131072 ## 65536 ""
 Sys_Flash_Check_Filemodtime=1 ## 0 ""
 Sys_Streaming_Cpu_Worker=7 ## 5 ""
@@ -471,6 +470,7 @@ R_Zfightingdepthscale=0.995 ## 0.995
 R_Zfightingextrude=0.001 ## 0.001
 R_Zpassdepthsorting=1 ## 1
 R_Zprepassmaxdist=16 ## 16
+S_Occlusionmaxdistance=500 ## 500
 Sys_Budget_Soundcpu=15 ## 15
 Sys_Flash_Allow_Reset_Mesh_Cache=1 ## 1
 Sys_Flash_Curve_Tess_Error=2 ## 2
@@ -536,7 +536,28 @@ removed Instant Herb Picking with hand movement (completely changed in update ip
 
 [No Drunk Sharpen Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/105)
 
-[No Stamina Visual Effects (make Data folder then add the .pak)](https://www.nexusmods.com/kingdomcomedeliverance/mods/10)
+---
+
+removed No Stamina Visual Effects removed cause its trash (find or make one like i did)
+
+make
+KingdomComeDeliverance\Mods\zzz_no_stamorsound\Data\zzz_no_stamorsound.pak
+```python
+KingdomComeDeliverance\Mods\zzz_no_stamorsound\Data\zzz_no_stamorsound.pak\Libs\UI\UIActions\health_stamina.xml (from ipl_patch_010700.pak)
+remove
+    <Node Id="367" Class="Image:ScreenFader" pos="620,710,0" flags="0">
+      <Inputs FadeGroup="" UseCurColor="0" FadeInTime="2" FadeOutTime="0" color_FadeColor="1,1,1" tex_TextureName="textures/ui/vignette_stamina_ui.tif" UpdateAlways="0" FadeAlpha="1" Priority="10" Persistent="0" />
+    </Node>
+    <Node Id="373" Class="Image:ScreenFader" pos="820,-210,0" flags="0">
+    <Node Id="367" Class="Image:ScreenFader" pos="620,710,0" flags="0">
+      <Inputs FadeGroup="FX:Stamina" UseCurColor="0" FadeInTime="2" FadeOutTime="0" color_FadeColor="1,1,1" tex_TextureName="textures/ui/vignette_stamina_ui.tif" UpdateAlways="0" FadeAlpha="1" Priority="10" Persistent="0" />
+    </Node>
+
+KingdomComeDeliverance\Mods\zzz_no_stamorsound\Data\zzz_no_stamorsound.pak\Libs\GameAudio\special.xml (from ipl_patch_010800.pak)
+remove "event:/voice/player_stamina" so its "" (its the stamina rumble sound)
+```
+
+---
 
 UI edits in KingdomComeDeliverance\Data\GameData.pak\Libs\UI\Textures\Hud_main.dds (make mod folder edit dds files if you want)
 
