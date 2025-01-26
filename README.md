@@ -1,4 +1,4 @@
-## updated 1/25/2025 v0.9.4 :ramen:
+## updated 1/26/2025 v0.9.5 :ramen: e_TimeOfDay=4.2
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -24,9 +24,9 @@ Con_Restricted=0 ##
 Sys_Maxfps=158 ## 0 ""
 
 ##
-Q_Quality=3 ## ""
-Sys_Spec_Full=7 ## ""
-Sys_Spec_Quality=4 ## 4 ""
+## Q_Quality=3 ## "Custom"
+## Sys_Spec_Full=7 ## "Custom"
+## Sys_Spec_Quality=4 ## 4 "Custom"
 
 ##
 Sys_Spec=0 ## "Custom"
@@ -126,7 +126,6 @@ E_Mergedmeshesviewdistratio=100 ## 85 "100 Max Slider"
 E_Particlesmotionblur=0 ## 1 ""
 E_Physproxytrilimit=1000 ## 10000 ""
 E_Shadowscastviewdistratio=1.3 ## 1.6 ""
-E_Shadowsmaxtexres=1872 ## 1024 ""
 E_Svoti_Voxelizeunderterrain=0 ## 1 ""
 E_Terraindetailmaterialsviewdistz=120 ## 100 ""
 E_Viewdistmin=10 ## 5 ""
@@ -140,12 +139,12 @@ Log_Writetofileverbosity=0 ## 1 ""
 P_Num_Bodies_Large_Group=10 ## 100 ""
 P_Num_Threads=7 ## 2 ""
 R_Depthoffield=0 ## 2 ""
+R_Depthoffieldmode=0 ## 1 ""
 R_Drawnearzrange=0.1 ## 0.001 ""
 R_Hdrvignetting=0 ## 1 ""
 R_Motionblur=0 ## 2 ""
 R_Motionblurquality=0 ## 2 ""
 R_Multigpu=0 ## 1 ""
-R_Rainamount=2 ## 1 ""
 R_Raindistmultiplier=2.5 ## 2 ""
 R_Rainmaxviewdist_Deferred=170 ## 150 ""
 R_Ssreflections=0 ## 1 ""
@@ -263,6 +262,7 @@ E_Shadowscastviewdistratiolights=0.8 ## 0.8
 E_Shadowscastviewdistratiomulinvis=0.6 ## 0.6
 E_Shadowsclouds=1 ## 1
 E_Shadowslodbiasfixed=0 ## 0
+E_Shadowsmaxtexres=1024 ## 1024
 E_Shadowsonalphablend=0 ## 0
 E_Shadowsonwater=0 ## 0
 E_Shadowsperobject=0 ## 0
@@ -401,6 +401,7 @@ R_Postprocessfilters=1 ## 1
 R_Postprocessgamefx=1 ## 1
 R_Postprocesshud3Dcache=0 ## 0
 R_Rain=2 ## 2
+R_Rainamount=1 ## 1
 R_Raindropseffect=1 ## 1
 R_Rainoccludersizetreshold=10 ## 10
 R_Refraction=1 ## 1
@@ -511,7 +512,9 @@ Wh_Player_Deepwaterlevel=0.85 ## 0.85
 
 #### Create a mod folder in KingdomComeDeliverance/Mods
 
-[Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
+#### make sure things are updating using correct files some of these might be farkled
+
+not needed? idk [Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
 
 [Arrows go fast](https://www.nexusmods.com/kingdomcomedeliverance/mods/1240)
 
@@ -555,6 +558,7 @@ remove
 
 KingdomComeDeliverance\Mods\zzz_no_stamorsound\Data\zzz_no_stamorsound.pak\Libs\GameAudio\special.xml (from ipl_patch_010800.pak)
 remove "event:/voice/player_stamina" so its "" (its the stamina rumble sound)
+remove "event:/special/player_health" (heart beat)
 ```
 
 ---
