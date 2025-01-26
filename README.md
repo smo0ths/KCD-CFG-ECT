@@ -512,7 +512,7 @@ Wh_Player_Deepwaterlevel=0.85 ## 0.85
 
 #### Create a mod folder in KingdomComeDeliverance/Mods
 
-#### make sure things are updating using correct files some of these might be farkled
+#### make sure mods are using up to date files some of these might be farkled
 
 not needed? idk [Cooking cauldron flickering smoke Fix](https://www.nexusmods.com/kingdomcomedeliverance/mods/1177)
 
