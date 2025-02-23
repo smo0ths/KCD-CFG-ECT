@@ -1,4 +1,6 @@
-## updated 1/26/2025 v0.9.5 :ramen: e_TimeOfDay=4.2
+## updated 2/23/2025 v0.9.5a :ramen: e_TimeOfDay=4.2
+
+## check my KCD2 config as this one won't be updated anymore most likely
 
 #### Create user.cfg in KingdomComeDeliverance folder and copy paste
 
@@ -134,6 +136,7 @@ E_Volumetricfog=0 ## 0 "Volumetric Fog"
 E_Wateroceanfft=0 ## 1 ""
 Es_Maxphysdist=100 ## 200 ""
 Es_Maxphysdistcloth=100 ## 300 ""
+G_Radialblur=0 ## 1 ""
 Log_Enableremoteconsole=0 ## 1 ""
 Log_Writetofileverbosity=0 ## 1 ""
 P_Num_Bodies_Large_Group=10 ## 100 ""
@@ -159,7 +162,6 @@ R_Volumetricfogtexdepth=16 ## 32 ""
 R_Volumetricfogtexscale=20 ## 10 ""
 R_Watervolumecaustics=0 ## 1 ""
 Sys_Flash_Address_Space=131072 ## 65536 ""
-Sys_Flash_Check_Filemodtime=1 ## 0 ""
 Sys_Streaming_Cpu_Worker=7 ## 5 ""
 Wh_Ai_Lod_Distancemax=160 ## "90,110,130"
 Wh_Ai_Lod_Distancemin=130 ## "60,80,100"
@@ -255,7 +257,7 @@ E_Preloadmaterials=1 ## 1
 E_Procvegetation=0 ## 0
 E_Shadows=1 ## 1
 E_Shadowsadaptscale=2.72 ## 2.72
-E_Shadowsblendcascades=2 ## 2
+E_Shadowsblendcascades=1 ## 1
 E_Shadowscacheobjectlod=0 ## 0
 E_Shadowscacherendercharacters=0 ## 0
 E_Shadowscastviewdistratiolights=0.8 ## 0.8
@@ -324,7 +326,6 @@ E_Wind=1 ## 1
 Es_Debrislifetimescale=1 ## 1
 Es_Maxphysdistinvisible=25 ## 25
 G_Breakage_Particles_Limit=160 ## 160
-G_Radialblur=0 ## 1
 G_Tree_Cut_Reuse_Dist=0 ## 0
 Gpu_Particle_Physics=1 ## 1
 I_Iceeffects=0 ## 0
@@ -353,7 +354,7 @@ R_Beams=1 ## 1
 R_Chromaticaberration=0 ## 0
 R_Cloudsupdatealways=0 ## 0
 R_Colorbits=32 ## 32
-R_Colorgrading=2 ## 2
+R_Colorgrading=1 ## 1
 R_Colorgradingchartscache=0 ## 0
 R_Conditionalrendering=0 ## 0
 R_Customresmaxsize=4096 ## 4096
@@ -474,6 +475,7 @@ R_Zprepassmaxdist=16 ## 16
 S_Occlusionmaxdistance=500 ## 500
 Sys_Budget_Soundcpu=15 ## 15
 Sys_Flash_Allow_Reset_Mesh_Cache=1 ## 1
+Sys_Flash_Check_Filemodtime=0 ## 0
 Sys_Flash_Curve_Tess_Error=2 ## 2
 Sys_Flash_Edgeaa=1 ## 1
 Sys_Flash_Newstencilclear=1 ## 1
